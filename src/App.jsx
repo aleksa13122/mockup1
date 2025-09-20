@@ -9,6 +9,7 @@ function App() {
       <div className="bg" style={{ backgroundImage: `url(${rest1})` }}></div>
       <div className="bg" style={{ backgroundImage: `url(${serv1})` }}></div>
       <div className="bg" style={{ backgroundImage: `url(${rest4})` }}></div>
+      <div className="bg" style={{ backgroundImage: `url(${rest4})` }}></div>
     </>
   );
 }

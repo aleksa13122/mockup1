@@ -1,3 +1,5 @@
+import "./Header.css";
+
 export default function Header() {
-  return <h1>Ovo je header</h1>;
+  return <h1>aurum</h1>;
 }

@@ -19,3 +19,7 @@ h1 {
 .nav-btns3 {
   text-align: right;
 }
+.nav-header {
+  background-color: black;
+  margin-bottom: 0;
+}

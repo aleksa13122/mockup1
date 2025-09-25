@@ -2,14 +2,13 @@ import "./App.css";
 import rest1 from "./assets/images/restourant1.jpg";
 import serv1 from "./assets/images/service1.jpg";
 import rest4 from "./assets/images/restourant4.jpg";
-import Header from "./components/Header.jsx";
+
 import Navigation from "./components/Navigation.jsx";
 
 function App() {
   return (
     <>
       <div className="bg" style={{ backgroundImage: `url(${rest1})` }}>
-        <Header></Header>
         <Navigation></Navigation>
       </div>
       <div className="bg" style={{ backgroundImage: `url(${serv1})` }}></div>

@@ -1,5 +1,21 @@
-.nav {
+.nav-bar {
   background-color: aqua;
-
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* levo i desno po 20px */
+}
+h1 {
+  text-align: center;
+  color: yellow;
+}
+.nav-btns1 {
+  text-align: left;
+}
+.nav-btns2 {
+  text-align: center;
+}
+.nav-btns3 {
+  text-align: right;
 }

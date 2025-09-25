@@ -3,7 +3,21 @@ import "./Navigation.css";
 export default function Navigation() {
   return (
     <>
-      <div className="nav">OVO JE NAVIGACIJA </div>
+      <h1 className="nav-header">AURUM</h1>
+      <div className="nav-bar">
+        <div className="nav-btns1">
+          <button>HOME</button>
+        </div>
+        <div className="nav-btns2">
+          <button>MENU</button>
+          <button>BOOK A TABLE</button>
+          <button>ORDER ONLINE</button>
+        </div>
+        <div className="nav-btns3">
+          <button>INSTA</button>
+          <button>FB</button>
+        </div>
+      </div>
     </>
   );
 }

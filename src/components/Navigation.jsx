@@ -7,9 +7,9 @@ export default function Navigation() {
       <div className="nav-bar">
         <div className="nav-btns1">
           <button>HOME</button>
+          <button>MENU</button>
         </div>
         <div className="nav-btns2">
-          <button>MENU</button>
           <button>BOOK A TABLE</button>
           <button>ORDER ONLINE</button>
         </div>

@@ -12,11 +12,20 @@
   align-items: center;
   padding: 15px 30px; /* levo i desno po 20px */
 }
+.nav-bar button {
+  font-family: "Faustina", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bold;
+}
 h1 {
   text-align: center;
 }
 .nav-btns1 {
   text-align: left;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 .nav-btns2 {
   text-align: center;
@@ -34,7 +43,6 @@ h1 {
   background-color: black;
   margin-bottom: 0;
   margin-top: 0;
-  /* padding: 10px; */
   font-family: "Baskervville SC", serif;
   font-optical-sizing: auto;
   font-size: 50px;

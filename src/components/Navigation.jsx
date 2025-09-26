@@ -11,10 +11,10 @@ export default function Navigation() {
       <div className="nav-bar">
         <div className="nav-btns1">
           <button className="home-btn">
-            <img src={homeIcon} alt="Home" />
+            <img src={homeIcon} alt="Home" className="home-icon" />
           </button>
           <button className="menu-btn">
-            <img src={menuIcon} alt="Menu" />
+            <img src={menuIcon} alt="Menu" className="menu-icon" />
             Menu
           </button>
         </div>

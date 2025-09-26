@@ -2,7 +2,7 @@ import "./Navigation.css";
 
 export default function Navigation() {
   return (
-    <>
+    <div className="navigation">
       <h1 className="nav-header">AURUM</h1>
       <div className="nav-bar">
         <div className="nav-btns1">
@@ -18,6 +18,6 @@ export default function Navigation() {
           <button>FB</button>
         </div>
       </div>
-    </>
+    </div>
   );
 }

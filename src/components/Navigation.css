@@ -1,26 +1,43 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .nav-bar {
   background-color: aqua;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px; /* levo i desno po 20px */
+  padding: 15px 30px; /* levo i desno po 20px */
 }
 h1 {
   text-align: center;
-  color: yellow;
 }
 .nav-btns1 {
   text-align: left;
 }
 .nav-btns2 {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 .nav-btns3 {
   text-align: right;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 .nav-header {
   background-color: black;
   margin-bottom: 0;
-  padding: 20px;
+  margin-top: 0;
+  /* padding: 10px; */
+  font-family: "Baskervville SC", serif;
+  font-optical-sizing: auto;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: normal;
 }

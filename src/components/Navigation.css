@@ -28,7 +28,9 @@ h1 {
   gap: 10px;
 }
 .nav-btns2 {
-  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -48,4 +50,12 @@ h1 {
   font-size: 50px;
   font-weight: bold;
   font-style: normal;
+}
+.nav-icon-menu {
+  width: 24px;
+  height: 24px;
+  fill: #339989;
+}
+.nav-icon-menu:hover {
+  fill: #7de2d1;
 }

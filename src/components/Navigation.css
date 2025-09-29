@@ -70,3 +70,15 @@ h1 {
 .nav-icon-menu:hover {
   fill: #7de2d1;
 }
+.insta-btn,
+.fb-btn {
+  display: flex;
+}
+.fb-icon,
+.insta-icon {
+  height: 30px;
+  width: 30px;
+  fill: red;
+  align-items: center;
+  justify-content: center;
+}

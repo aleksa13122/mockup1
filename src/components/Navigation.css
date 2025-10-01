@@ -37,6 +37,7 @@ h1 {
 .home-icon {
   width: 30px;
   height: 30px;
+  fill: #339989;
 }
 .nav-btns2 {
   position: absolute;
@@ -74,11 +75,10 @@ h1 {
 .fb-btn {
   display: flex;
 }
-.fb-icon,
-.insta-icon {
-  height: 30px;
-  width: 30px;
+
+.fb-icon {
   fill: red;
-  align-items: center;
-  justify-content: center;
+}
+.insta-icon {
+  fill: green;
 }

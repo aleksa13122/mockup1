@@ -93,13 +93,42 @@ h1 {
 .fb-btn,
 .order-btn,
 .table-btn {
-  background-color: black;
+  background-color: transparent;
   border-radius: 10px;
-  border: 1px solid rgb(138, 137, 137);
+  border: 0.5px solid rgb(138, 137, 137);
+  border: none;
 }
 .table-btn,
 .order-btn {
+  position: relative;
   font-size: 15px;
+  font-weight: 200;
   padding: 5px;
   color: gainsboro;
+}
+
+.insta-icon:hover,
+.fb-icon:hover {
+  fill: rgb(123, 122, 122);
+}
+.home-icon:hover,
+.menu-btn:hover,
+.menu-icon:hover {
+  color: rgb(123, 122, 122);
+  fill: rgb(123, 122, 122);
+}
+.order-btn::after,
+.table-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* stavi na donju ivicu dugmeta */
+  left: 0;
+  height: 1px; /* debljina linije */
+  width: 0; /* startuje sa 0 */
+  background: white;
+  transition: width 0.3s ease;
+}
+.order-btn:hover::after,
+.table-btn:hover::after {
+  width: 100%;
 }

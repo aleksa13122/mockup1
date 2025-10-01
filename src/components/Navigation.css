@@ -5,7 +5,12 @@
 }
 
 .nav-bar {
-  background-color: aqua;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.839) 0%,
+    rgba(0, 0, 0, 0.73) 20%,
+    rgba(0, 0, 0, 0) 100%
+  );
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -54,7 +59,7 @@ h1 {
   gap: 10px;
 }
 .nav-header {
-  background-color: black;
+  background: rgba(0, 0, 0, 0.839);
   margin-bottom: 0;
   margin-top: 0;
   font-family: "Baskervville SC", serif;
@@ -66,7 +71,7 @@ h1 {
 .nav-icon-menu {
   width: 24px;
   height: 24px;
-  fill: #339989;
+  background-color: black;
 }
 .nav-icon-menu:hover {
   fill: #7de2d1;
@@ -81,4 +86,14 @@ h1 {
 }
 .insta-icon {
   fill: green;
+}
+.home-btn,
+.menu-btn,
+.insta-btn,
+.fb-btn,
+.order-btn,
+.table-btn {
+  background-color: black;
+  border-radius: 10px;
+  border: 1px solid gainsboro;
 }

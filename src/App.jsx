@@ -4,6 +4,7 @@ import rest1 from "./assets/images/restourant1.jpg";
 import Navigation from "./components/Navigation.jsx";
 import Description from "./components/Description.jsx";
 import Galery from "./components/Galery.jsx";
+import Events from "./components/Events.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       </div>
       <Description></Description>
       <Galery></Galery>
+      <Events></Events>
     </>
   );
 }

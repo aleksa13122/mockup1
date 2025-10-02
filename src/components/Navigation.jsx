@@ -9,7 +9,7 @@ export default function Navigation() {
         <button className="table-btn">FOOD</button>
         <button className="order-btn">DRINKS</button>
         <button className="table-btn">BOOK A TABLE</button>
-        <button className="table-btn">BOOK A TABLE</button>
+        <button className="table-btn">ORDER ONLINE</button>
         <button className="order-btn">CONTACT</button>
       </div>
       <div className="language-btns">

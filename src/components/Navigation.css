@@ -1,8 +1,3 @@
-.navigation {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 
 .nav-bar {
   background: linear-gradient(
@@ -11,6 +6,9 @@
     rgba(0, 0, 0, 0.73) 20%,
     rgba(0, 0, 0, 0) 100%
   );
+  position: fixed;
+  top: 0;
+ 
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -26,40 +24,19 @@
 h1 {
   text-align: center;
 }
-.nav-btns1 {
-  text-align: left;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-.menu-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-}
-.menu-icon,
-.home-icon {
-  width: 30px;
-  height: 30px;
-  fill: gainsboro;
-}
-.nav-btns2 {
+
+.nav-btns {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: row;
+  justify-items: center;
   gap: 10px;
 }
-.nav-btns3 {
-  text-align: right;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
+
 .nav-header {
-  background: rgba(0, 0, 0, 0.839);
+  background: transparent
   margin-bottom: 0;
   margin-top: 0;
   font-family: "Baskervville SC", serif;
@@ -68,29 +45,7 @@ h1 {
   font-weight: bold;
   font-style: normal;
 }
-.nav-icon-menu {
-  width: 24px;
-  height: 24px;
-  background-color: black;
-}
-.nav-icon-menu:hover {
-  fill: #7de2d1;
-}
-.insta-btn,
-.fb-btn {
-  display: flex;
-}
 
-.fb-icon {
-  fill: gainsboro;
-}
-.insta-icon {
-  fill: gainsboro;
-}
-.home-btn,
-.menu-btn,
-.insta-btn,
-.fb-btn,
 .order-btn,
 .table-btn {
   background-color: transparent;
@@ -107,16 +62,6 @@ h1 {
   color: gainsboro;
 }
 
-.insta-icon:hover,
-.fb-icon:hover {
-  fill: rgb(123, 122, 122);
-}
-.home-icon:hover,
-.menu-btn:hover,
-.menu-icon:hover {
-  color: rgb(123, 122, 122);
-  fill: rgb(123, 122, 122);
-}
 .order-btn::after,
 .table-btn::after {
   content: "";

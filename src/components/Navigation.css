@@ -60,7 +60,8 @@
 
 /* Animacija donje linije */
 .order-btn::after,
-.table-btn::after {
+.table-btn::after,
+.flag-btn::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -72,6 +73,13 @@
 }
 
 .order-btn:hover::after,
-.table-btn:hover::after {
+.table-btn:hover::after,
+.flag-btn:hover::after {
   width: 100%;
+}
+.flag-btn {
+  background: transparent;
+  border: none;
+  position: relative; /* ovo je ključno */
+  cursor: pointer;
 }

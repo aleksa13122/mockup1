@@ -5,6 +5,7 @@ import Navigation from "./components/Navigation.jsx";
 import Description from "./components/Description.jsx";
 import Galery from "./components/Galery.jsx";
 import Events from "./components/Events.jsx";
+import Contact from "./components/Contact.jsx";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <Description></Description>
       <Galery></Galery>
       <Events></Events>
+      <div className="parallax"></div>
+      <Contact></Contact>
     </>
   );
 }

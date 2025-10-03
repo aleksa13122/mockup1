@@ -16,7 +16,12 @@ function App() {
       <Description></Description>
       <Galery></Galery>
       <Events></Events>
-      <div className="parallax"></div>
+      <div className="parallax">
+        <button className="parallax-btn">
+          {" "}
+          <span>Book Now</span>
+        </button>
+      </div>
       <Contact></Contact>
     </>
   );

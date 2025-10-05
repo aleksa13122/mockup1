@@ -1,9 +1,12 @@
 import "./Galery.css";
+import img1 from "../assets/images/food5.jpg";
 
 export default function Galery() {
   return (
     <div className="galery">
-      <div className="galery-picture">SLIKA</div>
+      <div className="galery-picture">
+        <img src={img1} alt="food" />
+      </div>
       <div className="galery-description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
         labore a dolor consequuntur veritatis ullam veniam quibusdam cum

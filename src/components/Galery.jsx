@@ -1,5 +1,8 @@
 import "./Galery.css";
 import img1 from "../assets/images/food5.jpg";
+import img2 from "../assets/images/drinks4.jpg";
+import img3 from "../assets/images/restourant7.jpg";
+import img4 from "../assets/images/backgroundmarble1.jpg";
 
 export default function Galery() {
   return (
@@ -8,23 +11,41 @@ export default function Galery() {
         <img src={img1} alt="food" />
       </div>
       <div className="galery-description">
+        <h3 className="galery-heading">FOOD</h3>
+        <p className="galery-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          labore a dolor consequuntur veritatis ullam veniam quibusdam cum
+          aspernatur Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Voluptatem labore a dolor consequuntur veritatis ullam veniam
+          quibusdam cum aspernatur
+        </p>
+        <button className="galery-btn">SEE MORE</button>
+      </div>
+      <div className="galery-description">
+        <h3>DRINKS</h3>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
         labore a dolor consequuntur veritatis ullam veniam quibusdam cum
-        aspernatur, soluta aperiam omnis voluptatibus! Ipsam voluptatibus
-        tempore architecto est culpa eligendi.
+        aspernatur Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatem labore a dolor consequuntur veritatis ullam veniam quibusdam
+        cum aspernatur
+        <button>SEE MORE</button>
+      </div>
+      <div className="galery-picture">
+        <img src={img2} alt="drinks" className="drinks-img" />
+      </div>
+      <div className="galery-picture">
+        <img src={img3} alt="food" />
       </div>
       <div className="galery-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro
-        dicta iusto maiores dignissimos iste at, molestias modi, officia numquam
-        quas sit eligendi obcaecati voluptatum excepturi odio. Dolore, saepe
-        consequuntur!
-      </div>
-      <div className="galery-picture">SLIKA</div>
-      <div className="galery-picture">SLIKA</div>
-      <div className="galery-description">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi autem
-        possimus, labore quam ea quis optio? Quia, sit? Reiciendis a ullam iste,
-        quaerat ea consequuntur hic minus accusamus eveniet soluta.
+        <h3 className="galery-heading">AMBIENT</h3>
+        <p className="galery-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          labore a dolor consequuntur veritatis ullam veniam quibusdam cum
+          aspernatur Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Voluptatem labore a dolor consequuntur veritatis ullam veniam
+          quibusdam cum aspernatur
+        </p>
+        <button className="galery-btn">SEE MORE</button>
       </div>
     </div>
   );

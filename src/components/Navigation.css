@@ -38,8 +38,18 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
+  /* animacija */
+  opacity: 0;
+  transform: translateY(-20px); /* krene malo iznad */
+  animation: fadeInDown 0.8s ease forwards;
+  animation-delay: 0.3s; /* mala pauza da deluje lepše */
 }
-
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* Language opcije */
 .language-btns {
   display: flex;

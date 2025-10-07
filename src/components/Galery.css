@@ -45,19 +45,28 @@
 }
 .galery-heading {
   align-self: start;
-  padding-left: 20px;
+  padding-left: 30px;
+  font-family: "Baskervville SC", serif;
+  font-optical-sizing: auto;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
 }
 .galery-text {
-  padding-left: 20px;
+  padding-left: 30px;
+  text-align: start;
+  text-align: justify;
+  padding-right: 40px;
 }
 .galery-btn {
   align-self: start;
-  padding-left: 20px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .galery-btn {
   position: relative;
-  padding: 15px 50px;
+  padding: 10px 40px;
   font-size: 18px;
   font-weight: 600;
   color: #ffffff;
@@ -73,7 +82,6 @@
   font-style: normal;
   font-size: 20px;
   font-weight: bolder;
-  margin-left: 20px;
 }
 
 .galery-btn::before {
@@ -84,7 +92,7 @@
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.9);
-  transition: left 0.3s ease;
+  transition: left 0.5s ease;
   z-index: 0;
 }
 
@@ -100,4 +108,19 @@
 
 .galery-btn:hover span {
   color: #000000;
+}
+
+.heading-drinks {
+  align-self: end;
+  padding-right: 30px;
+}
+.text-drinks {
+  text-align: end;
+  text-align: justify;
+  padding-right: 30px;
+  padding-left: 40px;
+}
+.btn-drinks {
+  align-self: flex-end;
+  margin-right: 30px;
 }

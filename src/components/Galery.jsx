@@ -2,7 +2,6 @@ import "./Galery.css";
 import img1 from "../assets/images/food5.jpg";
 import img2 from "../assets/images/drinks4.jpg";
 import img3 from "../assets/images/restourant7.jpg";
-import img4 from "../assets/images/backgroundmarble1.jpg";
 
 export default function Galery() {
   return (

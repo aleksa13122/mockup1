@@ -6,10 +6,10 @@ export default function Navigation() {
     <div className="nav-bar">
       <h1 className="nav-header">AURUM</h1>
       <div className="nav-btns">
-        <button className="table-btn">FOOD</button>
-        <button className="order-btn">DRINKS</button>
-        <button className="table-btn">BOOK A TABLE</button>
-        <button className="table-btn">ORDER ONLINE</button>
+        <button className="table-btn">MENU</button>
+        <button className="order-btn">BAR</button>
+        <button className="table-btn">GALLERY</button>
+        <button className="table-btn">RESERVATIONS</button>
         <button className="order-btn">CONTACT</button>
       </div>
       <div className="language-btns">

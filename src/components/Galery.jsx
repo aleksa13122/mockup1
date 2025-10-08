@@ -12,24 +12,22 @@ export default function Galery() {
       <div className="galery-description">
         <h3 className="galery-heading">FOOD</h3>
         <p className="galery-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          labore a dolor consequuntur veritatis ullam veniam quibusdam cum
-          aspernatur Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Voluptatem labore a dolor consequuntur veritatis ullam veniam
-          quibusdam cum aspernatur
+          At Aurum, every dish is a masterpiece. Our chefs combine seasonal
+          ingredients with refined techniques to create a menu that celebrates
+          Mediterranean heritage with a contemporary twist. Each plate is
+          designed not only to satisfy, but to surprise and delight.
         </p>
         <button className="galery-btn">
-          <span>SEE MORE</span>
+          <span>MENU</span>
         </button>
       </div>
       <div className="galery-description">
         <h3 className="galery-heading heading-drinks">DRINKS</h3>
         <p className="galery-text text-drinks">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          labore a dolor consequuntur veritatis ullam veniam quibusdam cum
-          aspernatur Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Voluptatem labore a dolor consequuntur veritatis ullam veniam
-          quibusdam cum aspernatur
+          Our curated wine list and crafted cocktails perfectly complement the
+          dining experience. From rare vintages to signature mixes, every sip is
+          chosen to elevate the flavors of your meal and indulge your senses in
+          elegance.
         </p>
         <button className="galery-btn btn-drinks">
           <span>SEE MORE</span>
@@ -44,11 +42,9 @@ export default function Galery() {
       <div className="galery-description">
         <h3 className="galery-heading">AMBIENCE</h3>
         <p className="galery-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          labore a dolor consequuntur veritatis ullam veniam quibusdam cum
-          aspernatur Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Voluptatem labore a dolor consequuntur veritatis ullam veniam
-          quibusdam cum aspernatur
+          Step into an atmosphere of timeless luxury. With sophisticated design,
+          warm lighting, and a view that captures the spirit of Malta, Aurum is
+          more than a restaurant — it’s an escape into refinement and comfort.
         </p>
         <button className="galery-btn">
           <span>SEE MORE</span>

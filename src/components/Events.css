@@ -11,19 +11,38 @@
     inset 0 -10px 20px rgba(0, 0, 0, 0.7);
 }
 .event-card {
-  height: 400px;
+  height: 475px;
   width: 350px;
-  background-color: rebeccapurple;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 1px solid rgb(85, 85, 85);
   display: flex;
   flex-direction: column;
   justify-content: center; /* centrira horizontalno */
   align-items: center; /* centrira vertikalno */
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-10px); /* pomera karticu na gore */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8); /* dublja senka */
 }
 .card-img {
   height: 350px;
   width: 300px;
+  border-radius: 10px;
   align-self: center;
   justify-self: center;
   align-items: center;
   background-color: aqua;
+}
+.card-title {
+  color: white;
+  font-size: 20px;
+  font-family: "Baskervville SC", serif;
+  font-optical-sizing: auto;
+  /* font-size: 50px; */
+  font-weight: normal;
+  font-style: normal;
 }

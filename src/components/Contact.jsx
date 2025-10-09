@@ -12,23 +12,24 @@ export default function Contact() {
         </div>
         <div>
           <h3>CONTACT</h3>
-          <li>PHONE NUM</li>
-          <li>INSTAGRAM FACEBOOK</li>
-          <li></li>
+          <li>
+            <a>PHONE NUM</a>
+          </li>
+          <li>
+            <a>instagram fejs</a>
+          </li>
+          <li>
+            <a>mejl</a>
+          </li>
         </div>
         <div>
-          <h3>WORKING HOURS</h3>
-          <li>
-            <a>MONDAY-FRIDAY 24/7</a>
-          </li>
-          <li>
-            <a>MONDAY-FRIDAY 24/7</a>
-          </li>
-          <li>
-            <a>MONDAY-FRIDAY 24/7</a>
-          </li>
+          <h3>LOCATION</h3>
+          <li>ULICA</li>
+          <li>POSTANSKI I IME GRADA</li>
+          <li>DRZAVA</li>
         </div>
       </div>
+      <p className="contact-footer">© 2025 Aurum. All rights reserved.</p>
     </div>
   );
 }

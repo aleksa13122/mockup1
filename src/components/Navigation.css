@@ -12,6 +12,7 @@
   justify-content: space-between; /* raspoređuje levo – centar – desno */
   align-items: center; /* vertikalno centriranje */
   padding: 15px 30px;
+  z-index: 1000;
 }
 
 .nav-bar button {

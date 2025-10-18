@@ -15,11 +15,14 @@
   z-index: 1000;
 }
 
-.nav-bar button {
+.nav-bar a {
   font-family: "Faustina", serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: bold;
+}
+.nav-bar a:hover {
+  color: white;
 }
 
 /* Header */

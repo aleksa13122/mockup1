@@ -4,7 +4,7 @@ import facebookIcon from "../assets/images/icons/icons8-facebook.svg";
 
 export default function Contact() {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div>
         <h2 className="contact-header">AURUM</h2>
       </div>
@@ -64,7 +64,7 @@ export default function Contact() {
           <h3>WHERE TO FIND US</h3>
           <ul className="contact-list">
             <li>Triq Dun Frangisk Scibberas 80</li>
-            <li>2080 Mellieha,Malta</li>
+            <li>4023 Mellieha, Malta</li>
 
             <li>
               <a href="https://www.google.com/search?q=google+maps+mellieha&oq=google+maps+mellieha+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEINDA4MGowajGoAgCwAgA&sourceid=chrome&ie=UTF-8#vhid=0x0:0x8410ebe85c31fe39&vssid=lclsmap&smwie=1">

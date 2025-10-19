@@ -1,6 +1,6 @@
 import Navigation from "../Navigation";
 import Contact from "../Contact";
-import "../.././App.css";
+import "../pages/Pages.css";
 
 export default function Gallery() {
   return (
@@ -9,6 +9,11 @@ export default function Gallery() {
       <div className="main-container">
         <h1>Gallery</h1>
         <p>A visual journey through elegance and taste.</p>
+      </div>
+      <div className="parallax">
+        <button className="parallax-btn">
+          <span>Book Now</span>
+        </button>
       </div>
       <Contact />
     </>

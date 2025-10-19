@@ -11,9 +11,9 @@ export default function Navigation() {
           HOME
         </Link>
         <Link to="/menu" className="nav-link">
-          MENU
+          FOOD
         </Link>
-        <Link to="/menu" className="nav-link">
+        <Link to="/drinks" className="nav-link">
           BAR
         </Link>
         <Link to="/gallery" className="nav-link">

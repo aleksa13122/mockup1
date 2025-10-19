@@ -32,7 +32,7 @@ export default function Galery() {
 
       {/* DRINKS */}
       <div className="galery-description" data-aos="fade-right">
-        <h3 className="galery-heading heading-drinks">DRINKS</h3>
+        <h3 className="galery-heading heading-drinks">BAR</h3>
         <p className="galery-text text-drinks">
           Our curated wine list and crafted cocktails perfectly complement the
           dining experience. From rare vintages to signature mixes, every sip is

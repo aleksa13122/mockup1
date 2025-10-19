@@ -15,14 +15,35 @@
   z-index: 1000;
 }
 
-.nav-bar a {
+.nav-link {
+  position: relative; /* ključno za ::after */
+  text-decoration: none;
+  /* gap: 20px; */
+  color: rgb(228, 225, 225);
   font-family: "Faustina", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
-.nav-bar a:hover {
+.nav-link:hover {
   color: white;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: white; /* boja teksta na hover */
+}
+
+.nav-link:hover::after {
+  width: 100%; /* pojavi se linija */
 }
 
 /* Header */
@@ -41,7 +62,8 @@
 .nav-btns {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 20px;
+  color: whitesmoke;
   /* animacija */
   opacity: 0;
   transform: translateY(-20px); /* krene malo iznad */
@@ -60,22 +82,8 @@
   gap: 8px;
 }
 
-.order-btn,
-.table-btn {
-  background-color: transparent;
-  border-radius: 10px;
-  border: none;
-  font-size: 15px;
-  font-weight: 200;
-  padding: 5px 10px;
-  color: gainsboro;
-  cursor: pointer;
-  position: relative;
-}
-
 /* Animacija donje linije */
-.order-btn::after,
-.table-btn::after,
+
 .flag-btn::after {
   content: "";
   position: absolute;
@@ -87,8 +95,6 @@
   transition: width 0.3s ease;
 }
 
-.order-btn:hover::after,
-.table-btn:hover::after,
 .flag-btn:hover::after {
   width: 100%;
 }

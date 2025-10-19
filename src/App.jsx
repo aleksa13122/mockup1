@@ -1,32 +1,20 @@
-import "./App.css";
-import rest1 from "./assets/images/restourant1.jpg";
-
-import Navigation from "./components/Navigation.jsx";
-import Description from "./components/Description.jsx";
-import Galery from "./components/Galery.jsx";
-import Events from "./components/Events.jsx";
-import Contact from "./components/Contact.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/pages/Home";
+import Menu from "./components/pages/Food";
+import Bar from "./components/pages/Drinks";
+import Gallery from "./components/pages/Gallery";
 
 function App() {
   return (
-    <>
-      <div className="bg" style={{ backgroundImage: `url(${rest1})` }}>
-        <Navigation></Navigation>
-      </div>
-      <Description></Description>
-      <Galery></Galery>
-      <Events></Events>
-      <div className="parallax">
-        <button className="parallax-btn">
-          {" "}
-          <span>Book Now</span>
-        </button>
-      </div>
-      <Contact></Contact>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/food" element={<Bar />} />
+        <Route path="/gallery" element={<Gallery />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
-
-console.log(rest1);

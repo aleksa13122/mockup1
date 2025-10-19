@@ -40,7 +40,7 @@ export default function Galery() {
           elegance.
         </p>
         <button className="galery-btn btn-drinks">
-          <span>SEE MORE</span>
+          <span>DRINKS</span>
         </button>
       </div>
       <div className="galery-picture" data-aos="fade-left">
@@ -59,7 +59,7 @@ export default function Galery() {
           more than a restaurant — it’s an escape into refinement and comfort.
         </p>
         <button className="galery-btn">
-          <span>SEE MORE</span>
+          <span>GALLERY</span>
         </button>
       </div>
     </div>

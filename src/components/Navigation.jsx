@@ -1,4 +1,5 @@
 import "./Navigation.css";
+import { Link } from "react-router-dom";
 import ReactCountryFlag from "react-country-flag";
 
 export default function Navigation() {
@@ -6,11 +7,22 @@ export default function Navigation() {
     <div className="nav-bar">
       <h1 className="nav-header">AURUM</h1>
       <div className="nav-btns">
-        <a className="table-btn">MENU</a>
-        <a className="order-btn">BAR</a>
-        <a className="table-btn">GALLERY</a>
-        <a className="table-btn">RESERVATIONS</a>
-        <a href="#contact" className="order-btn">
+        <Link to="/" className="nav-link">
+          HOME
+        </Link>
+        <Link to="/menu" className="nav-link">
+          MENU
+        </Link>
+        <Link to="/menu" className="nav-link">
+          BAR
+        </Link>
+        <Link to="/gallery" className="nav-link">
+          GALLERY
+        </Link>
+        <Link to="/reservations" className="nav-link">
+          RESERVATIONS
+        </Link>
+        <a href="#contact" className="nav-link">
           CONTACT
         </a>
       </div>

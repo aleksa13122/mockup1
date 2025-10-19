@@ -47,3 +47,59 @@
   font-weight: normal;
   font-style: normal;
 }
+/* Modal pozadina */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  backdrop-filter: blur(4px);
+}
+
+/* Sam popup */
+.modal-content {
+  background: #111;
+  color: white;
+  padding: 40px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  font-family: "Faustina", serif;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Dugme za zatvaranje */
+.close-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* Efekat otvaranja */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

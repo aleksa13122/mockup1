@@ -7,21 +7,21 @@ export default function Navigation() {
     <div className="nav-bar">
       <h1 className="nav-header">AURUM</h1>
       <div className="nav-btns">
-        <Link to="/" className="nav-link">
+        <a href="/" className="nav-link">
           HOME
-        </Link>
-        <Link to="/menu" className="nav-link">
+        </a>
+        <a href="/menu" className="nav-link">
           FOOD
-        </Link>
-        <Link to="/drinks" className="nav-link">
+        </a>
+        <a href="/drinks" className="nav-link">
           BAR
-        </Link>
-        <Link to="/gallery" className="nav-link">
+        </a>
+        <a href="/gallery" className="nav-link">
           GALLERY
-        </Link>
-        <Link to="/reservations" className="nav-link">
+        </a>
+        <a href="/reservations" className="nav-link">
           RESERVATIONS
-        </Link>
+        </a>
         <a href="#contact" className="nav-link">
           CONTACT
         </a>

@@ -25,9 +25,9 @@ export default function Galery() {
           Mediterranean heritage with a contemporary twist. Each plate is
           designed not only to satisfy, but to surprise and delight.
         </p>
-        <button className="galery-btn">
+        <a href="/menu" className="galery-btn">
           <span>MENU</span>
-        </button>
+        </a>
       </div>
 
       {/* DRINKS */}
@@ -39,9 +39,9 @@ export default function Galery() {
           chosen to elevate the flavors of your meal and indulge your senses in
           elegance.
         </p>
-        <button className="galery-btn btn-drinks">
+        <a href="/drinks" className="galery-btn btn-drinks">
           <span>DRINKS</span>
-        </button>
+        </a>
       </div>
       <div className="galery-picture" data-aos="fade-left">
         <img src={img2} alt="drinks" className="drinks-img" />
@@ -58,9 +58,9 @@ export default function Galery() {
           warm lighting, and a view that captures the spirit of Malta, Aurum is
           more than a restaurant — it’s an escape into refinement and comfort.
         </p>
-        <button className="galery-btn">
+        <a href="/gallery" className="galery-btn">
           <span>GALLERY</span>
-        </button>
+        </a>
       </div>
     </div>
   );

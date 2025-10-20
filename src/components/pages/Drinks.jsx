@@ -26,9 +26,9 @@ export default function Drinks() {
       </div>
 
       <div className="parallax">
-        <button className="parallax-btn">
+        <a href="/reservations" className="parallax-btn">
           <span>Book Now</span>
-        </button>
+        </a>
       </div>
       <Contact />
     </>

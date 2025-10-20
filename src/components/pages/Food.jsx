@@ -11,9 +11,9 @@ export default function Menu() {
         <p>Explore Aurum’s refined culinary creations.</p>
       </div>
       <div className="parallax">
-        <button className="parallax-btn">
+        <a href="/reservations" className="parallax-btn">
           <span>Book Now</span>
-        </button>
+        </a>
       </div>
       <Contact />
     </>

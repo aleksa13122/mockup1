@@ -11,9 +11,9 @@ export default function Gallery() {
         <p>A visual journey through elegance and taste.</p>
       </div>
       <div className="parallax">
-        <button className="parallax-btn">
+        <a href="/reservations" className="parallax-btn">
           <span>Book Now</span>
-        </button>
+        </a>
       </div>
       <Contact />
     </>

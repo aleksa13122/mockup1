@@ -21,17 +21,30 @@
   margin-top: 0;
   padding-top: 0;
 }
-
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* tekst manji, slika veca, dugme najmanje */
+  align-items: center;
+  gap: 40px;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 80vh;
+}
 .pages-header {
   /* margin-top: -100px; */
   padding-top: 0;
   font-size: 50px;
 }
 .pages-desc {
+  /* background-color: aqua; */
   text-align: center;
   width: 80%;
   font-size: 20px;
+  letter-spacing: 1px; /* suptilan razmak između slova */
+  line-height: 1.8; /* više razmaka između redova za luksuzniji izgled */
+  /* text-align: justify; možeš koristiti i justify za lep raspored */
   color: rgb(182, 182, 182);
+  width: 100%; /* koristi punu širinu parent grida */
 }
 .pages-btn {
   position: relative;
@@ -51,7 +64,7 @@
   font-style: normal;
   font-size: 20px;
   font-weight: bolder;
-  /* margin-top: 40px; */
+  margin-top: 40px;
 }
 .pages-btn::before {
   content: "";
@@ -77,7 +90,7 @@
 .pages-btn:hover span {
   color: #000000;
 }
-.image-container {
+.div-two {
   width: 100%;
   max-width: 600px; /* prilagodi po želji: 400–800px */
   margin: 40px auto;
@@ -88,10 +101,20 @@
 
 .pages-image {
   width: 100%;
+  max-width: 550px; /* smanji broj ako hoćeš još manju sliku */
   height: auto;
-  border-radius: 10px; /* blago zaobljeni rubovi */
+  border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease;
 }
-.first-column {
+.div-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.pages-image-drinks {
+  max-height: 700px; /* promeni broj po želji — 350–450 je elegantno */
+  width: auto;
+  object-fit: contain; /* sprečava deformaciju slike */
 }

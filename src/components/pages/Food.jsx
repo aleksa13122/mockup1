@@ -18,7 +18,7 @@ export default function Menu() {
               flavors that delight the senses.
             </p>
             <button className="pages-btn">
-              <span>DOWNLOAD MENU</span>
+              <span>DOWNLOAD FOOD MENU</span>
             </button>
           </div>
           <div className="div-two">

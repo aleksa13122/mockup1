@@ -40,7 +40,7 @@ export default function Galery() {
           elegance.
         </p>
         <a href="/drinks" className="galery-btn btn-drinks">
-          <span>DRINKS</span>
+          <span>MENU</span>
         </a>
       </div>
       <div className="galery-picture" data-aos="fade-left">

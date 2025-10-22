@@ -4,6 +4,7 @@ import Menu from "./components/pages/Food";
 import Bar from "./components/pages/Drinks";
 import Gallery from "./components/pages/Gallery";
 import Reservation from "./components/pages/Reservation";
+import ThankYou from "./components/pages/ThankYou";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/drinks" element={<Bar />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/reservations" element={<Reservation />} />
+        <Route path="/thankyou" element={<ThankYou />} />
       </Routes>
     </Router>
   );

@@ -10,30 +10,61 @@ export default function Gallery() {
     <>
       <Navigation />
       <div className="main-container">
-        {/* <h1>Reservations</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-          consequuntur similique provident eum sunt dolore ullam nemo, incidunt
-          atque, voluptas earum. Consequuntur delectus est debitis nisi laborum
-          laboriosam dicta minima.
-        </p> */}
-        <form
-          action="https://formsubmit.co/alexxclipss@gmail.com"
-          method="POST"
-        >
-          <input name="full_name" required />
-          <input name="email" required />
-          <input name="party_size" type="number" min="1" required />
-          <input name="time" type="time" min={minTime} required />
-          <input
-            name="date"
-            type="date"
-            min={new Date().toISOString().split("T")[0]}
-            required
-          />
-          <input name="notes" type="text" />
-          <button type="submit">RESERVE</button>
-        </form>
+        <div className="grid-container">
+          <div className="div-one">
+            <h1 className="pages-header">Reservations</h1>
+            <p className="pages-desc">
+              Make your reservation easily by filling out the form on the right.
+              We’ll confirm your booking as soon as possible.
+            </p>
+          </div>
+          <div className="div-two">
+            <form
+              action="https://formsubmit.co/alexxclipss@gmail.com"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_next"
+                value="http://localhost:5173/thankyou"
+              />
+              <input name="full_name" placeholder="Name" required />
+              <input name="email" placeholder="Email" required />
+              <input
+                name="party_size"
+                type="number"
+                min="1"
+                placeholder="Number of people"
+                required
+              />
+              <input
+                name="time"
+                type="time"
+                min={minTime}
+                placeholder="Desired Time"
+                required
+              />
+              <div className="input-wrapper">
+                <input
+                  type="text"
+                  name="date"
+                  id="date"
+                  placeholder="Select a date"
+                  onFocus={(e) => (e.target.type = "date")}
+                  onBlur={(e) => (e.target.type = "text")}
+                  min={new Date().toISOString().split("T")[0]}
+                  required
+                />
+              </div>
+              <input
+                name="notes"
+                placeholder="Leave us a note (optional)"
+                type="text"
+              />
+              <button type="submit">RESERVE</button>
+            </form>
+          </div>
+        </div>
       </div>
       <div className="parallax"></div>
       <Contact />

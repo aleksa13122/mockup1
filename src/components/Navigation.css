@@ -84,6 +84,11 @@
 
 /* Animacija donje linije */
 
+.flag-btn:hover,
+.flag-btn:focus {
+  background: transparent !important;
+  outline: none;
+}
 .flag-btn::after {
   content: "";
   position: absolute;

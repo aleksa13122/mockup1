@@ -20,7 +20,7 @@ export default function Gallery() {
       <Navigation />
 
       <div className="main-container">
-        <div className="grid-container-vertical">
+        <div className="grid-container">
           {/* Leva strana — naslov i tekst */}
           <div className="div-one">
             <h1 className="pages-header">Gallery</h1>
@@ -28,49 +28,24 @@ export default function Gallery() {
               A visual journey through elegance and taste. Explore moments of
               culinary artistry and ambiance captured at Aurum.
             </p>
-            <a href="/reservations" className="pages-btn">
-              <span>Book Now</span>
-            </a>
           </div>
 
-          {/* Desna strana — vertikalni carousel */}
-          <div className="div-two-vertical">
-            <Swiper
-              direction="vertical" // 🔹 rotiramo carousel vertikalno
-              modules={[SwiperNavigation]}
-              navigation
-              spaceBetween={20}
-              slidesPerView={3} // 3 slike odjednom
-              centeredSlides={true}
-              loop={true}
-              className="vertical-swiper"
-            >
-              <SwiperSlide>
-                <img src={img1} alt="Image 1" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={img2} alt="Image 2" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={img3} alt="Image 3" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={img4} alt="Image 4" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={img5} alt="Image 5" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={img6} alt="Image 6" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={img7} alt="Image 7" />
-              </SwiperSlide>
-            </Swiper>
+          {/* Desna strana — display grid */}
+          <div className="div-two gallery-grid">
+            <img src={img1} alt="Aurum Gallery 1" />
+            <img src={img2} alt="Aurum Gallery 2" />
+            <img src={img3} alt="Aurum Gallery 3" />
+            <img src={img4} alt="Aurum Gallery 4" />
+            <img src={img5} alt="Aurum Gallery 5" />
+            <img src={img6} alt="Aurum Gallery 6" />
           </div>
         </div>
       </div>
-
+      <div className="parallax">
+        <a href="/reservations" className="parallax-btn">
+          <span>Book Now</span>
+        </a>
+      </div>
       <Contact />
     </>
   );

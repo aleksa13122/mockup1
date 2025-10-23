@@ -173,3 +173,113 @@ input[type="date"]:focus + .fake-placeholder,
 input[type="date"]:valid + .fake-placeholder {
   opacity: 0;
 }
+.grid-container-vertical {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* === LEVA STRANA === */
+.div-one {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.pages-header {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.pages-desc {
+  font-size: 20px;
+  line-height: 1.8;
+  color: rgb(182, 182, 182);
+  max-width: 500px;
+}
+
+.pages-btn {
+  margin-top: 30px;
+  padding: 10px 40px;
+  font-size: 20px;
+  color: white;
+  border: 1px solid white;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+.pages-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  transition: left 0.5s ease;
+}
+.pages-btn:hover::before {
+  left: 0;
+}
+.pages-btn:hover span {
+  color: black;
+}
+
+/* === DESNA STRANA – VERTIKALNI CAROUSEL === */
+.div-two-vertical {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  max-width: 500px;
+  position: relative;
+}
+
+.vertical-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Svaka slika – proporcionalna i elegantna */
+.vertical-swiper .swiper-slide img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Srednja slika veća */
+.vertical-swiper .swiper-slide-active img {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Ostale slike malo manje */
+.vertical-swiper .swiper-slide img {
+  opacity: 0.7;
+}
+
+/* Strelice izvan okvira */
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  position: absolute;
+  left: -60px; /* pomerene levo-desno */
+  right: auto;
+  transform: scale(1.2);
+}
+.swiper-button-next {
+  left: auto;
+  right: -60px;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: gold;
+}

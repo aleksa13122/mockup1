@@ -4,22 +4,23 @@ import facebookIcon from "../assets/images/icons/icons8-facebook.svg";
 import { useState } from "react";
 
 export default function Contact() {
-  const [showPopup, setShowPoput] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+  const [showPopupPhone, setShowPopupPhone] = useState(false);
 
   function Popup() {
-    setShowPoput(true);
+    setShowPopup(true);
     navigator.clipboard.writeText(" aurummellieha@gmail.com");
 
     setTimeout(() => {
-      setShowPoput(false);
+      setShowPopup(false);
     }, 5000);
   }
   function PopupPhone() {
-    setShowPoput(true);
+    setShowPopupPhone(true);
     navigator.clipboard.writeText("+386 999 855 40");
 
     setTimeout(() => {
-      setShowPoput(false);
+      setShowPopupPhone(false);
     }, 5000);
   }
 
@@ -46,7 +47,7 @@ export default function Contact() {
               <a onClick={PopupPhone} className="phone-copy">
                 +38699985540
               </a>
-              {showPopup && <div className="popup">Copied Phone!</div>}
+              {showPopupPhone && <div className="popup">Copied Phone!</div>}
             </li>
             <div className="contact-icons">
               <a

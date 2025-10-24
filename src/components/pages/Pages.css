@@ -200,3 +200,16 @@ input[type="date"]:valid + .fake-placeholder {
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
+
+.thanku-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.thanku-header {
+  font-size: 40px;
+}
+.thanku-desc {
+  font-size: 30px;
+  color: rgb(182, 182, 182);
+}

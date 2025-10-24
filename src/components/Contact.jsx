@@ -1,6 +1,7 @@
 import "./Contact.css";
 import instagramIcon from "../assets/images/icons/icons8-instagram.svg";
 import facebookIcon from "../assets/images/icons/icons8-facebook.svg";
+import locationIcon from "../assets/images/icons/location-map-icon.svg";
 import { useState } from "react";
 
 export default function Contact() {
@@ -45,7 +46,7 @@ export default function Contact() {
           <ul className="contact-list">
             <li>
               <a onClick={PopupPhone} className="phone-copy">
-                +38699985540
+                +386 999 855 40
               </a>
               {showPopupPhone && <div className="popup">Copied Phone!</div>}
             </li>
@@ -89,9 +90,20 @@ export default function Contact() {
             <li>Triq Dun Frangisk Scibberas 80</li>
             <li>4023 Mellieha, Malta</li>
 
-            <li>
-              <a href="https://www.google.com/search?q=google+maps+mellieha&oq=google+maps+mellieha+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEINDA4MGowajGoAgCwAgA&sourceid=chrome&ie=UTF-8#vhid=0x0:0x8410ebe85c31fe39&vssid=lclsmap&smwie=1">
+            <li
+              className="
+            location-item"
+            >
+              <a
+                className="contact-icon-link"
+                href="https://www.google.com/search?q=google+maps+mellieha&oq=google+maps+mellieha+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEINDA4MGowajGoAgCwAgA&sourceid=chrome&ie=UTF-8#vhid=0x0:0x8410ebe85c31fe39&vssid=lclsmap&smwie=1"
+              >
                 Location
+                <img
+                  src={locationIcon}
+                  alt="Location"
+                  className="contact-icon location-icon"
+                />
               </a>
             </li>
           </ul>

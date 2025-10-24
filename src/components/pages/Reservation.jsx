@@ -31,7 +31,7 @@ export default function Gallery() {
               <input name="full_name" placeholder="Name" required />
               <input name="email" placeholder="Email" required />
               <input
-                name="party_size"
+                name="number_of_people"
                 type="number"
                 min="1"
                 placeholder="Number of people"

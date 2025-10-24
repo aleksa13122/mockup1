@@ -8,7 +8,8 @@ import img3 from "../assets/images/restourant7.jpg";
 
 export default function Galery() {
   useEffect(() => {
-    AOS.init({ duration: 700, once: true }); // animacije traju 1s i pokreću se samo jednom
+    AOS.init({ duration: 500, once: true }); // animacije traju 1s i pokreću se samo jednom
+    AOS.refresh();
   }, []);
 
   return (

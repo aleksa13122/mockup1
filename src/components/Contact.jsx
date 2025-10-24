@@ -4,6 +4,25 @@ import facebookIcon from "../assets/images/icons/icons8-facebook.svg";
 import { useState } from "react";
 
 export default function Contact() {
+  const [showPopup, setShowPoput] = useState(false);
+
+  function Popup() {
+    setShowPoput(true);
+    navigator.clipboard.writeText(" aurummellieha@gmail.com");
+
+    setTimeout(() => {
+      setShowPoput(false);
+    }, 5000);
+  }
+  function PopupPhone() {
+    setShowPoput(true);
+    navigator.clipboard.writeText("+386 999 855 40");
+
+    setTimeout(() => {
+      setShowPoput(false);
+    }, 5000);
+  }
+
   return (
     <div className="contact" id="contact">
       <div>
@@ -24,9 +43,11 @@ export default function Contact() {
           <h3>CONTACT</h3>
           <ul className="contact-list">
             <li>
-              <a href="tel:+38699985540">+386 999 855 40</a>
+              <a onClick={PopupPhone} className="phone-copy">
+                +38699985540
+              </a>
+              {showPopup && <div className="popup">Copied Phone!</div>}
             </li>
-
             <div className="contact-icons">
               <a
                 href="https://www.instagram.com/aurumrestaurant"
@@ -53,11 +74,11 @@ export default function Contact() {
                 />
               </a>
             </div>
-
             <li>
-              <a href="mailto:aurummellieha@gmail.com">
+              <a onClick={Popup} className="email-copy">
                 aurummellieha@gmail.com
               </a>
+              {showPopup && <div className="popup">Copied Email!</div>}
             </li>
           </ul>
         </div>

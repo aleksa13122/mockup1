@@ -18,9 +18,9 @@ export default function Menu() {
               turning each drink into an experience that awakens the senses and
               elevates the moment.
             </p>
-            <button className="pages-btn">
+            <a href="/drinks-menu.pdf" download className="pages-btn">
               <span>DOWNLOAD DRINKS MENU</span>
-            </button>
+            </a>
           </div>
           <div className="div-two">
             <img

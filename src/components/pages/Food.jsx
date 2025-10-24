@@ -17,9 +17,9 @@ export default function Menu() {
               ingredients with innovative techniques to create a symphony of
               flavors that delight the senses.
             </p>
-            <button className="pages-btn">
+            <a href="/food-menu.pdf" download className="pages-btn">
               <span>DOWNLOAD FOOD MENU</span>
-            </button>
+            </a>
           </div>
           <div className="div-two">
             <img

@@ -1,6 +1,7 @@
 import "./Contact.css";
 import instagramIcon from "../assets/images/icons/icons8-instagram.svg";
 import facebookIcon from "../assets/images/icons/icons8-facebook.svg";
+import { useState } from "react";
 
 export default function Contact() {
   return (
@@ -15,7 +16,7 @@ export default function Contact() {
           <ul className="contact-list">
             <li>MONDAY-THURSDAY AND SUNDAY</li>
             <li className="li-hours">09:00 - 00:00h</li>
-            <li>WEEKENDS</li>
+            <li>FRIDAY AND SATURDAY</li>
             <li className="li-hours">09:00 - 02:00h</li>
           </ul>
         </div>

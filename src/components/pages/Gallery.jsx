@@ -12,7 +12,6 @@ import img3 from "../../assets/images/gallery3.jpg";
 import img4 from "../../assets/images/gallery4.jpg";
 import img5 from "../../assets/images/gallery5.jpg";
 import img6 from "../../assets/images/galleryy6.jpg";
-import img7 from "../../assets/images/gallery7.jpg";
 
 export default function Gallery() {
   return (

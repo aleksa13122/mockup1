@@ -79,7 +79,6 @@
 li {
   position: relative; /* roditelj postaje referenca */
 }
-
 .popup {
   position: absolute; /* izlazi iz flow-a */
   left: 80%; /* 10% desno od linka */

@@ -50,11 +50,12 @@ export default function Contact() {
                 </div>
               )}
             </li>
-            <div className="contact-icons">
+            <li className="contact-icons">
               <a
                 href="https://www.instagram.com/aurumrestaurant"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="contact-icon-link"
               >
                 <img
                   src={instagramIcon}
@@ -66,6 +67,7 @@ export default function Contact() {
                 href="https://www.facebook.com/aurumrestaurant"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="contact-icon-link"
               >
                 <img
                   src={facebookIcon}
@@ -73,7 +75,8 @@ export default function Contact() {
                   className="contact-icon"
                 />
               </a>
-            </div>
+            </li>
+
             <li>
               <a onClick={Popup} className="email-copy">
                 aurummellieha@gmail.com

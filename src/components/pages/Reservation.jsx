@@ -3,6 +3,7 @@ import Navigation from "../Navigation";
 import Contact from "../Contact";
 import "../pages/Pages.css";
 import { LanguageContext } from "../../context/LanguageContext";
+import { motion } from "framer-motion";
 
 export default function Reservations() {
   const { t } = useContext(LanguageContext);
@@ -46,76 +47,83 @@ export default function Reservations() {
 
   return (
     <>
-      <Navigation />
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -30 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+      >
+        <Navigation />
 
-      <div className="main-container">
-        <div className="grid-container">
-          <div className="div-one">
-            <h1 className="pages-header">{t("reservations.title")}</h1>
-            <p className="pages-desc">{t("reservations.desc")}</p>
-          </div>
+        <div className="main-container">
+          <div className="grid-container">
+            <div className="div-one">
+              <h1 className="pages-header">{t("reservations.title")}</h1>
+              <p className="pages-desc">{t("reservations.desc")}</p>
+            </div>
 
-          <div className="div-two">
-            <form
-              action="https://script.google.com/macros/s/AKfycbwl74h_JLxJGeC7Ly7ZwfilisbbodWE4L2svMvkNbFOQFZJDzAJHEUlG8MSBFKC5l0HTw/exec"
-              method="POST"
-              onSubmit={handleSubmit}
-            >
-              <input
-                type="hidden"
-                name="_next"
-                value="http://localhost:5173/thankyou"
-              />
-              <input
-                name="full_name"
-                placeholder={t("reservations.form.name")}
-                required
-              />
-              <input
-                name="email"
-                placeholder={t("reservations.form.email")}
-                required
-              />
-              <input
-                name="number_of_people"
-                type="number"
-                min="1"
-                placeholder={t("reservations.form.people")}
-                required
-              />
-              <input
-                type="date"
-                name="date"
-                min={new Date().toISOString().split("T")[0]}
-                onChange={handleDateChange}
-                required
-              />
-              <input
-                key={minTime}
-                type="time"
-                name="time"
-                min={minTime}
-                onChange={handleTimeChange}
-                required
-              />
-              <input
-                name="notes"
-                placeholder={t("reservations.form.notes")}
-                type="text"
-              />
-              <button type="submit">{t("reservations.form.reserve")}</button>
-            </form>
+            <div className="div-two">
+              <form
+                action="https://script.google.com/macros/s/AKfycbwl74h_JLxJGeC7Ly7ZwfilisbbodWE4L2svMvkNbFOQFZJDzAJHEUlG8MSBFKC5l0HTw/exec"
+                method="POST"
+                onSubmit={handleSubmit}
+              >
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://localhost:5173/thankyou"
+                />
+                <input
+                  name="full_name"
+                  placeholder={t("reservations.form.name")}
+                  required
+                />
+                <input
+                  name="email"
+                  placeholder={t("reservations.form.email")}
+                  required
+                />
+                <input
+                  name="number_of_people"
+                  type="number"
+                  min="1"
+                  placeholder={t("reservations.form.people")}
+                  required
+                />
+                <input
+                  type="date"
+                  name="date"
+                  min={new Date().toISOString().split("T")[0]}
+                  onChange={handleDateChange}
+                  required
+                />
+                <input
+                  key={minTime}
+                  type="time"
+                  name="time"
+                  min={minTime}
+                  onChange={handleTimeChange}
+                  required
+                />
+                <input
+                  name="notes"
+                  placeholder={t("reservations.form.notes")}
+                  type="text"
+                />
+                <button type="submit">{t("reservations.form.reserve")}</button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="parallax">
-        <a href="/reservations" className="parallax-btn">
-          <span>{t("reservations.bookNow")}</span>
-        </a>
-      </div>
+        <div className="parallax">
+          <a href="/reservations" className="parallax-btn">
+            <span>{t("reservations.bookNow")}</span>
+          </a>
+        </div>
 
-      <Contact />
+        <Contact />
+      </motion.div>
     </>
   );
 }

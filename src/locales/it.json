@@ -1,0 +1,110 @@
+{
+  "navigation": {
+    "title": "AURUM",
+    "links": {
+      "home": "HOME",
+      "food": "CIBO",
+      "bar": "BAR",
+      "gallery": "GALLERIA",
+      "reservations": "PRENOTAZIONI",
+      "contact": "CONTATTI"
+    }
+  },
+  "description": {
+    "text": "Benvenuti da AURUM — dove la tradizione incontra l’eleganza nel cuore di Malta!"
+  },
+  "gallery": {
+    "food": {
+      "title": "CIBO",
+      "desc": "Da Aurum, ogni piatto è un capolavoro. I nostri chef combinano ingredienti stagionali e tecniche raffinate per creare un menu che celebra il patrimonio mediterraneo con un tocco contemporaneo.",
+      "btn": "MENU"
+    },
+    "drinks": {
+      "title": "BAR",
+      "desc": "La nostra selezione di vini e cocktail artigianali completa perfettamente l’esperienza gastronomica. Ogni sorso è pensato per esaltare i sapori e deliziare i sensi.",
+      "btn": "MENU"
+    },
+    "ambience": {
+      "title": "ATMOSFERA",
+      "desc": "Entra in un’atmosfera di lusso senza tempo. Con design sofisticato, luci calde e vista mozzafiato, Aurum è più di un ristorante — è un rifugio di comfort e raffinatezza.",
+      "btn": "GALLERIA"
+    }
+  },
+  "events": {
+    "brunch": {
+      "title": "BRUNCH",
+      "desc": "Goditi un brunch raffinato — piatti leggeri mediterranei, dolci freschi e sapori stagionali serviti con eleganza."
+    },
+    "mediterranean": {
+      "title": "DELIZIA MEDITERRANEA",
+      "desc": "Un viaggio culinario attraverso il Mediterraneo — equilibrio perfetto tra freschezza, consistenza e raffinatezza."
+    },
+    "juices": {
+      "title": "SUCCHI FRESCHI",
+      "desc": "Assapora la freschezza con i nostri succhi spremuti a freddo preparati con frutta ed erbe locali."
+    },
+    "modal": { "close": "Chiudi" }
+  },
+  "contact": {
+    "title": "AURUM",
+    "workingHours": {
+      "title": "ORARI DI LAVORO",
+      "weekdays": "LUNEDÌ–GIOVEDÌ E DOMENICA",
+      "hours1": "09:00 - 00:00h",
+      "weekend": "VENERDÌ E SABATO",
+      "hours2": "09:00 - 02:00h"
+    },
+    "contactSection": {
+      "title": "CONTATTI",
+      "phoneCopied": "Telefono copiato!",
+      "emailCopied": "Email copiata!"
+    },
+    "where": {
+      "title": "DOVE TROVARCI",
+      "address1": "Triq Dun Frangisk Scibberas 80",
+      "address2": "4023 Mellieha, Malta",
+      "location": "Posizione"
+    },
+    "footer": "© 2025 Aurum. Tutti i diritti riservati."
+  },
+  "home": { "bookNow": "Prenota Ora" },
+  "menu": {
+    "title": "Menu",
+    "desc": "Da Aurum, ogni piatto è realizzato con passione e arte. Ingredienti di stagione e tecniche innovative creano una sinfonia di sapori che deliziano i sensi.",
+    "download": "SCARICA IL MENU CIBO",
+    "bookNow": "Prenota Ora"
+  },
+  "bar": {
+    "title": "Bar",
+    "desc": "Il Bar di Aurum è dove il gusto incontra l’arte. Ogni bicchiere racconta una storia — dai distillati invecchiati ai cocktail moderni. Ogni bevanda è un’esperienza che esalta i sensi.",
+    "download": "SCARICA IL MENU BEVANDE",
+    "bookNow": "Prenota Ora"
+  },
+  "galleryPage": {
+    "title": "Galleria",
+    "desc": "Un viaggio visivo tra eleganza e gusto. Scopri i momenti di arte culinaria catturati da Aurum.",
+    "bookNow": "Prenota Ora"
+  },
+  "reservations": {
+    "title": "Prenotazioni",
+    "desc": "Prenota facilmente compilando il modulo a destra. Confermeremo il prima possibile.",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "people": "Numero di persone",
+      "date": "Data",
+      "time": "Ora",
+      "notes": "Lascia una nota (opzionale)",
+      "reserve": "PRENOTA",
+      "alertClosed": "Siamo chiusi a quest’ora.",
+      "alertFull": "Questo orario è al completo!"
+    },
+    "bookNow": "Prenota Ora"
+  },
+  "thankyou": {
+    "title": "Grazie!",
+    "desc1": "La tua richiesta di prenotazione è stata inviata con successo.",
+    "desc2": "Non vediamo l’ora di darti il benvenuto da Aurum.",
+    "bookNow": "Prenota Ora"
+  }
+}

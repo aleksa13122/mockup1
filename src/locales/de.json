@@ -1,0 +1,110 @@
+{
+  "navigation": {
+    "title": "AURUM",
+    "links": {
+      "home": "START",
+      "food": "ESSEN",
+      "bar": "BAR",
+      "gallery": "GALERIE",
+      "reservations": "RESERVIERUNG",
+      "contact": "KONTAKT"
+    }
+  },
+  "description": {
+    "text": "Willkommen bei AURUM — wo Tradition auf Eleganz im Herzen Maltas trifft!"
+  },
+  "gallery": {
+    "food": {
+      "title": "ESSEN",
+      "desc": "Bei Aurum ist jedes Gericht ein Meisterwerk. Unsere Köche kombinieren saisonale Zutaten mit raffinierten Techniken, um ein Menü zu schaffen, das das mediterrane Erbe mit modernem Stil feiert.",
+      "btn": "MENÜ"
+    },
+    "drinks": {
+      "title": "BAR",
+      "desc": "Unsere sorgfältig ausgewählte Weinkarte und handgemachte Cocktails vervollständigen das kulinarische Erlebnis perfekt. Jeder Schluck ist darauf abgestimmt, den Geschmack zu verfeinern und die Sinne zu verwöhnen.",
+      "btn": "MENÜ"
+    },
+    "ambience": {
+      "title": "AMBIENTE",
+      "desc": "Tauchen Sie ein in eine Atmosphäre zeitloser Eleganz. Mit stilvollem Design, warmem Licht und Blick auf Malta ist Aurum mehr als ein Restaurant — es ist eine Flucht in Komfort und Raffinesse.",
+      "btn": "GALERIE"
+    }
+  },
+  "events": {
+    "brunch": {
+      "title": "BRUNCH",
+      "desc": "Genießen Sie ein raffiniertes Brunch-Erlebnis — leichte mediterrane Gerichte, frisches Gebäck und saisonale Aromen, elegant serviert."
+    },
+    "mediterranean": {
+      "title": "MEDITERRANER GENUSS",
+      "desc": "Eine kulinarische Reise durch das Mittelmeer — ein perfektes Gleichgewicht aus Frische, Textur und Raffinesse."
+    },
+    "juices": {
+      "title": "FRISCHE SÄFTE",
+      "desc": "Genießen Sie unsere kaltgepressten Säfte aus regionalen Früchten und Kräutern."
+    },
+    "modal": { "close": "Schließen" }
+  },
+  "contact": {
+    "title": "AURUM",
+    "workingHours": {
+      "title": "ÖFFNUNGSZEITEN",
+      "weekdays": "MONTAG–DONNERSTAG UND SONNTAG",
+      "hours1": "09:00 - 00:00h",
+      "weekend": "FREITAG UND SAMSTAG",
+      "hours2": "09:00 - 02:00h"
+    },
+    "contactSection": {
+      "title": "KONTAKT",
+      "phoneCopied": "Telefonnummer kopiert!",
+      "emailCopied": "E-Mail kopiert!"
+    },
+    "where": {
+      "title": "WO SIE UNS FINDEN",
+      "address1": "Triq Dun Frangisk Scibberas 80",
+      "address2": "4023 Mellieha, Malta",
+      "location": "Standort"
+    },
+    "footer": "© 2025 Aurum. Alle Rechte vorbehalten."
+  },
+  "home": { "bookNow": "Jetzt Buchen" },
+  "menu": {
+    "title": "Menü",
+    "desc": "Bei Aurum wird jedes Gericht mit Leidenschaft und Kunstfertigkeit zubereitet. Saisonale Zutaten und innovative Techniken schaffen eine Symphonie der Aromen.",
+    "download": "ESSENSMENÜ HERUNTERLADEN",
+    "bookNow": "Jetzt Buchen"
+  },
+  "bar": {
+    "title": "Bar",
+    "desc": "Die Aurum Bar ist der Ort, an dem Geschmack auf Kunst trifft. Jede Glas erzählt eine Geschichte – von gereiften Spirituosen bis zu modernen Cocktails. Jede Kreation belebt die Sinne.",
+    "download": "GETRÄNKEMENÜ HERUNTERLADEN",
+    "bookNow": "Jetzt Buchen"
+  },
+  "galleryPage": {
+    "title": "Galerie",
+    "desc": "Eine visuelle Reise durch Eleganz und Geschmack. Entdecken Sie kulinarische Kunstmomente, die bei Aurum festgehalten wurden.",
+    "bookNow": "Jetzt Buchen"
+  },
+  "reservations": {
+    "title": "Reservierungen",
+    "desc": "Reservieren Sie einfach, indem Sie das Formular rechts ausfüllen. Wir bestätigen Ihre Buchung so bald wie möglich.",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "people": "Anzahl der Personen",
+      "date": "Datum",
+      "time": "Uhrzeit",
+      "notes": "Hinterlassen Sie eine Notiz (optional)",
+      "reserve": "RESERVIEREN",
+      "alertClosed": "Wir sind zu dieser Zeit geschlossen.",
+      "alertFull": "Dieser Zeitraum ist ausgebucht!"
+    },
+    "bookNow": "Jetzt Buchen"
+  },
+  "thankyou": {
+    "title": "Vielen Dank!",
+    "desc1": "Ihre Reservierungsanfrage wurde erfolgreich übermittelt.",
+    "desc2": "Wir freuen uns darauf, Sie bei Aurum begrüßen zu dürfen.",
+    "bookNow": "Jetzt Buchen"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "navigation": {
+    "title": "AURUM",
+    "links": {
+      "home": "HOME",
+      "food": "FOOD",
+      "bar": "BAR",
+      "gallery": "GALLERY",
+      "reservations": "RESERVATIONS",
+      "contact": "CONTACT"
+    }
+  },
+
+  "description": {
+    "text": "Welcome to AURUM — where tradition meets elegance in the heart of Malta!"
+  },
+
+  "gallery": {
+    "food": {
+      "title": "FOOD",
+      "desc": "At Aurum, every dish is a masterpiece. Our chefs combine seasonal ingredients with refined techniques to create a menu that celebrates Mediterranean heritage with a contemporary twist. Each plate is designed not only to satisfy, but to surprise and delight.",
+      "btn": "MENU"
+    },
+    "drinks": {
+      "title": "BAR",
+      "desc": "Our curated wine list and crafted cocktails perfectly complement the dining experience. From rare vintages to signature mixes, every sip is chosen to elevate the flavors of your meal and indulge your senses in elegance.",
+      "btn": "MENU"
+    },
+    "ambience": {
+      "title": "AMBIENCE",
+      "desc": "Step into an atmosphere of timeless luxury. With sophisticated design, warm lighting, and a view that captures the spirit of Malta, Aurum is more than a restaurant — it’s an escape into refinement and comfort.",
+      "btn": "GALLERY"
+    }
+  },
+
+  "events": {
+    "brunch": {
+      "title": "BRUNCH",
+      "desc": "Enjoy a refined brunch experience — light Mediterranean bites, fresh pastries, and seasonal flavors served with elegance."
+    },
+    "mediterranean": {
+      "title": "MEDITERRANEAN DELIGHT",
+      "desc": "A culinary journey through the Mediterranean — a perfect balance of freshness, texture, and sophistication."
+    },
+    "juices": {
+      "title": "FRESH JUICES",
+      "desc": "Sip on freshness with our selection of cold-pressed juices made from locally sourced fruits and herbs."
+    },
+    "modal": {
+      "close": "Close"
+    }
+  },
+
+  "contact": {
+    "title": "AURUM",
+    "workingHours": {
+      "title": "WORKING HOURS",
+      "weekdays": "MONDAY-THURSDAY AND SUNDAY",
+      "hours1": "09:00 - 00:00h",
+      "weekend": "FRIDAY AND SATURDAY",
+      "hours2": "09:00 - 02:00h"
+    },
+    "contactSection": {
+      "title": "CONTACT",
+      "phoneCopied": "Copied Phone!",
+      "emailCopied": "Copied Email!"
+    },
+    "where": {
+      "title": "WHERE TO FIND US",
+      "address1": "Triq Dun Frangisk Scibberas 80",
+      "address2": "4023 Mellieha, Malta",
+      "location": "Location"
+    },
+    "footer": "© 2025 Aurum. All rights reserved."
+  },
+
+  "home": {
+    "bookNow": "Book Now"
+  },
+
+  "menu": {
+    "title": "Menu",
+    "desc": "At Aurum, every dish is a masterpiece crafted with precision, passion, and artistry. Our chefs combine the finest seasonal ingredients with innovative techniques to create a symphony of flavors that delight the senses.",
+    "download": "DOWNLOAD FOOD MENU",
+    "bookNow": "Book Now"
+  },
+
+  "bar": {
+    "title": "Bar",
+    "desc": "The Aurum Bar is where flavor meets artistry in liquid form. Here, every glass tells a story — from smooth, aged spirits to vibrant, modern cocktails. Our mixologists blend precision with creativity, turning each drink into an experience that awakens the senses and elevates the moment.",
+    "download": "DOWNLOAD DRINKS MENU",
+    "bookNow": "Book Now"
+  },
+
+  "galleryPage": {
+    "title": "Gallery",
+    "desc": "A visual journey through elegance and taste. Explore moments of culinary artistry and ambiance captured at Aurum.",
+    "bookNow": "Book Now"
+  },
+
+  "reservations": {
+    "title": "Reservations",
+    "desc": "Make your reservation easily by filling out the form on the right. We’ll confirm your booking as soon as possible.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "people": "Number of people",
+      "date": "Date",
+      "time": "Time",
+      "notes": "Leave us a note (optional)",
+      "reserve": "RESERVE",
+      "alertClosed": "We are closed at that time.",
+      "alertFull": "This time slot is fully booked!"
+    },
+    "bookNow": "Book Now"
+  },
+
+  "thankyou": {
+    "title": "Thank You!",
+    "desc1": "Your reservation request has been successfully submitted.",
+    "desc2": "We look forward to welcoming you at Aurum.",
+    "bookNow": "Book Now"
+  }
+}

@@ -1,40 +1,45 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Navigation from "../Navigation";
 import Contact from "../Contact";
 import "../pages/Pages.css";
+import { LanguageContext } from "../../context/LanguageContext";
 
 export default function Reservations() {
-  // 1️⃣ STATE — čuvamo izabrani datum i minimalno vreme
+  const { t } = useContext(LanguageContext);
   const [selectedDate, setSelectedDate] = useState("");
   const [minTime, setMinTime] = useState("09:00");
 
-  // 2️⃣ FUNKCIJA — proverava koji je dan korisnik izabrao
   function handleDateChange(e) {
     const chosenDate = e.target.value;
     setSelectedDate(chosenDate);
 
-    const today = new Date();
-    const formattedToday = today.toISOString().split("T")[0];
-
-    // Ako je danas — vreme mora biti sat unapred
-    if (chosenDate === formattedToday) {
+    const today = new Date().toISOString().split("T")[0];
+    if (chosenDate === today) {
       const now = new Date();
-      now.setHours(now.getHours() + 1); // dodaj 1h
-      const nextHour = now.toISOString().slice(11, 16); // uzmi HH:MM
-      setMinTime(nextHour);
-    } else {
-      // Ako nije danas — minimalno 09:00
-      setMinTime("09:00");
-    }
+      now.setHours(now.getHours() + 1);
+      setMinTime(now.toISOString().slice(11, 16));
+    } else setMinTime("09:00");
   }
 
-  // 3️⃣ FUNKCIJA — validacija vremena (ako želiš dodatnu sigurnost)
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    const response = await fetch(
+      "https://script.google.com/macros/s/AKfycbwl74h_JLxJGeC7Ly7ZwfilisbbodWE4L2svMvkNbFOQFZJDzAJHEUlG8MSBFKC5l0HTw/exec",
+      { method: "POST", body: formData }
+    );
+
+    const text = await response.text();
+    if (text.includes("Sorry")) alert(t("reservations.form.alertFull"));
+    else window.location.href = "/thankyou";
+  }
+
   function handleTimeChange(e) {
     const [hours] = e.target.value.split(":").map(Number);
-    const isValid = (hours >= 9 && hours <= 23) || (hours >= 0 && hours < 2);
-
-    if (!isValid) {
-      alert("We are closed at that time.");
+    const valid = (hours >= 9 && hours <= 23) || (hours >= 0 && hours < 2);
+    if (!valid) {
+      alert(t("reservations.form.alertClosed"));
       e.target.value = "";
     }
   }
@@ -42,38 +47,42 @@ export default function Reservations() {
   return (
     <>
       <Navigation />
+
       <div className="main-container">
         <div className="grid-container">
-          {/* LEVA STRANA */}
           <div className="div-one">
-            <h1 className="pages-header">Reservations</h1>
-            <p className="pages-desc">
-              Make your reservation easily by filling out the form on the right.
-              We’ll confirm your booking as soon as possible.
-            </p>
+            <h1 className="pages-header">{t("reservations.title")}</h1>
+            <p className="pages-desc">{t("reservations.desc")}</p>
           </div>
 
-          {/* DESNA STRANA */}
           <div className="div-two">
             <form
               action="https://script.google.com/macros/s/AKfycbwl74h_JLxJGeC7Ly7ZwfilisbbodWE4L2svMvkNbFOQFZJDzAJHEUlG8MSBFKC5l0HTw/exec"
               method="POST"
+              onSubmit={handleSubmit}
             >
               <input
                 type="hidden"
                 name="_next"
                 value="http://localhost:5173/thankyou"
               />
-              <input name="full_name" placeholder="Name" required />
-              <input name="email" placeholder="Email" required />
+              <input
+                name="full_name"
+                placeholder={t("reservations.form.name")}
+                required
+              />
+              <input
+                name="email"
+                placeholder={t("reservations.form.email")}
+                required
+              />
               <input
                 name="number_of_people"
                 type="number"
                 min="1"
-                placeholder="Number of people"
+                placeholder={t("reservations.form.people")}
                 required
               />
-              {/* Datum */}
               <input
                 type="date"
                 name="date"
@@ -81,9 +90,8 @@ export default function Reservations() {
                 onChange={handleDateChange}
                 required
               />
-              {/* Vreme */}
               <input
-                key={minTime} // 👈 ovo je ključ koji “osvežava” input
+                key={minTime}
                 type="time"
                 name="time"
                 min={minTime}
@@ -92,21 +100,21 @@ export default function Reservations() {
               />
               <input
                 name="notes"
-                placeholder="Leave us a note (optional)"
+                placeholder={t("reservations.form.notes")}
                 type="text"
               />
-              <button type="submit" href="/thankyou">
-                RESERVE
-              </button>
+              <button type="submit">{t("reservations.form.reserve")}</button>
             </form>
           </div>
         </div>
       </div>
+
       <div className="parallax">
         <a href="/reservations" className="parallax-btn">
-          <span>Book Now</span>
+          <span>{t("reservations.bookNow")}</span>
         </a>
       </div>
+
       <Contact />
     </>
   );

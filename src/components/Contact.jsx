@@ -1,61 +1,60 @@
 import "./Contact.css";
+import { useContext, useState } from "react";
+import { LanguageContext } from "../context/LanguageContext";
 import instagramIcon from "../assets/images/icons/icons8-instagram.svg";
 import facebookIcon from "../assets/images/icons/icons8-facebook.svg";
 import locationIcon from "../assets/images/icons/location-map-icon.svg";
-import { useState } from "react";
 
 export default function Contact() {
+  const { t } = useContext(LanguageContext);
   const [showPopup, setShowPopup] = useState(false);
   const [showPopupPhone, setShowPopupPhone] = useState(false);
 
-  function Popup() {
+  const Popup = () => {
     setShowPopup(true);
-    navigator.clipboard.writeText(" aurummellieha@gmail.com");
+    navigator.clipboard.writeText("aurummellieha@gmail.com");
+    setTimeout(() => setShowPopup(false), 3000);
+  };
 
-    setTimeout(() => {
-      setShowPopup(false);
-    }, 5000);
-  }
-  function PopupPhone() {
+  const PopupPhone = () => {
     setShowPopupPhone(true);
     navigator.clipboard.writeText("+386 999 855 40");
-
-    setTimeout(() => {
-      setShowPopupPhone(false);
-    }, 5000);
-  }
+    setTimeout(() => setShowPopupPhone(false), 3000);
+  };
 
   return (
     <div className="contact" id="contact">
-      <div>
-        <h2 className="contact-header">AURUM</h2>
-      </div>
+      <h2 className="contact-header">{t("contact.title")}</h2>
 
       <div className="contact-grid">
         <div>
-          <h3>WORKING HOURS</h3>
+          <h3>{t("contact.workingHours.title")}</h3>
           <ul className="contact-list">
-            <li>MONDAY-THURSDAY AND SUNDAY</li>
-            <li className="li-hours">09:00 - 00:00h</li>
-            <li>FRIDAY AND SATURDAY</li>
-            <li className="li-hours">09:00 - 02:00h</li>
+            <li>{t("contact.workingHours.weekdays")}</li>
+            <li className="li-hours">{t("contact.workingHours.hours1")}</li>
+            <li>{t("contact.workingHours.weekend")}</li>
+            <li className="li-hours">{t("contact.workingHours.hours2")}</li>
           </ul>
         </div>
+
         <div>
-          <h3>CONTACT</h3>
+          <h3>{t("contact.contactSection.title")}</h3>
           <ul className="contact-list">
             <li>
               <a onClick={PopupPhone} className="phone-copy">
                 +386 999 855 40
               </a>
-              {showPopupPhone && <div className="popup">Copied Phone!</div>}
+              {showPopupPhone && (
+                <div className="popup">
+                  {t("contact.contactSection.phoneCopied")}
+                </div>
+              )}
             </li>
             <div className="contact-icons">
               <a
                 href="https://www.instagram.com/aurumrestaurant"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="contact-icon-link"
               >
                 <img
                   src={instagramIcon}
@@ -67,7 +66,6 @@ export default function Contact() {
                 href="https://www.facebook.com/aurumrestaurant"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="contact-icon-link"
               >
                 <img
                   src={facebookIcon}
@@ -80,25 +78,26 @@ export default function Contact() {
               <a onClick={Popup} className="email-copy">
                 aurummellieha@gmail.com
               </a>
-              {showPopup && <div className="popup">Copied Email!</div>}
+              {showPopup && (
+                <div className="popup">
+                  {t("contact.contactSection.emailCopied")}
+                </div>
+              )}
             </li>
           </ul>
         </div>
-        <div>
-          <h3>WHERE TO FIND US</h3>
-          <ul className="contact-list">
-            <li>Triq Dun Frangisk Scibberas 80</li>
-            <li>4023 Mellieha, Malta</li>
 
-            <li
-              className="
-            location-item"
-            >
+        <div>
+          <h3>{t("contact.where.title")}</h3>
+          <ul className="contact-list">
+            <li>{t("contact.where.address1")}</li>
+            <li>{t("contact.where.address2")}</li>
+            <li className="location-item">
               <a
                 className="contact-icon-link"
-                href="https://www.google.com/search?q=google+maps+mellieha&oq=google+maps+mellieha+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEINDA4MGowajGoAgCwAgA&sourceid=chrome&ie=UTF-8#vhid=0x0:0x8410ebe85c31fe39&vssid=lclsmap&smwie=1"
+                href="https://www.google.com/maps"
               >
-                Location
+                {t("contact.where.location")}
                 <img
                   src={locationIcon}
                   alt="Location"
@@ -109,7 +108,8 @@ export default function Contact() {
           </ul>
         </div>
       </div>
-      <p className="contact-footer">© 2025 Aurum. All rights reserved.</p>
+
+      <p className="contact-footer">{t("contact.footer")}</p>
     </div>
   );
 }

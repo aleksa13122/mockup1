@@ -1,10 +1,8 @@
 import Navigation from "../Navigation";
 import Contact from "../Contact";
 import "../pages/Pages.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation as SwiperNavigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
+import { useContext } from "react";
+import { LanguageContext } from "../../context/LanguageContext";
 
 import img1 from "../../assets/images/gallery1.jpg";
 import img2 from "../../assets/images/gallery2.jpg";
@@ -14,22 +12,19 @@ import img5 from "../../assets/images/gallery5.jpg";
 import img6 from "../../assets/images/galleryy6.jpg";
 
 export default function Gallery() {
+  const { t } = useContext(LanguageContext);
+
   return (
     <>
       <Navigation />
 
       <div className="main-container">
         <div className="grid-container">
-          {/* Leva strana — naslov i tekst */}
           <div className="div-one">
-            <h1 className="pages-header">Gallery</h1>
-            <p className="pages-desc">
-              A visual journey through elegance and taste. Explore moments of
-              culinary artistry and ambiance captured at Aurum.
-            </p>
+            <h1 className="pages-header">{t("galleryPage.title")}</h1>
+            <p className="pages-desc">{t("galleryPage.desc")}</p>
           </div>
 
-          {/* Desna strana — display grid */}
           <div className="div-two gallery-grid">
             <img src={img1} alt="Aurum Gallery 1" />
             <img src={img2} alt="Aurum Gallery 2" />
@@ -40,11 +35,13 @@ export default function Gallery() {
           </div>
         </div>
       </div>
+
       <div className="parallax">
         <a href="/reservations" className="parallax-btn">
-          <span>Book Now</span>
+          <span>{t("galleryPage.bookNow")}</span>
         </a>
       </div>
+
       <Contact />
     </>
   );

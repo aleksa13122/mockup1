@@ -1,0 +1,124 @@
+{
+  "navigation": {
+    "title": "AURUM",
+    "links": {
+      "home": "DAR",
+      "food": "IKEL",
+      "bar": "BAR",
+      "gallery": "GALERIJA",
+      "reservations": "RISERVAZZJONI",
+      "contact": "KUNTATT"
+    }
+  },
+
+  "description": {
+    "text": "Merħba f’AURUM — fejn it-tradizzjoni tiltaqa’ mal-eleganza fil-qalba ta’ Malta!"
+  },
+
+  "gallery": {
+    "food": {
+      "title": "IKEL",
+      "desc": "F’Aurum, kull platt huwa kapolavur. Is-sajjieda tagħna jgħaqqdu ingredjenti staġjonali ma’ tekniki raffinati biex joħolqu menu li jiċċelebra l-wirt Mediterranju b’togħma moderna. Kull platt huwa maħsub biex jissorprendi u jferraħ.",
+      "btn": "MENU"
+    },
+    "drinks": {
+      "title": "BAR",
+      "desc": "Il-lista tal-inbid magħżula u l-cocktails maħduma bir-reqqa jikkumplimentaw perfettament l-esperjenza tal-ikel. Kull xorb huwa magħżul biex itella’ t-togħmiet u jħeġġeġ is-sensi tiegħek bl-eleganza.",
+      "btn": "MENU"
+    },
+    "ambience": {
+      "title": "AMBIENCE",
+      "desc": "Daħħal f’atmosfera ta’ lussu li ma jgħaddix iż-żmien. B’disaġġn sofistikat, dwal sħan, u veduta li taqbad l-ispirtu ta’ Malta, Aurum huwa aktar minn ristorant — huwa ħarba lejn il-kumdità u l-raffinament.",
+      "btn": "GALERIJA"
+    }
+  },
+
+  "events": {
+    "brunch": {
+      "title": "BRUNCH",
+      "desc": "Gawdi brunch raffinata — ikel Mediterranju ħafif, pastizzi friski u togħmiet stagjonali servuti b’eleganza."
+    },
+    "mediterranean": {
+      "title": "DELIZZJU MEDITERRANJU",
+      "desc": "Vjaġġ kulinari madwar il-Mediterran — bilanċ perfett ta’ frisk, tessut u sofistikazzjoni."
+    },
+    "juices": {
+      "title": "MERQIET FRISKA",
+      "desc": "Ixrob frisk bil-għażla tagħna ta’ merqiet magħmulin minn frott u ħxejjex lokali."
+    },
+    "modal": {
+      "close": "Agħlaq"
+    }
+  },
+
+  "contact": {
+    "title": "AURUM",
+    "workingHours": {
+      "title": "ĦIN TA’ XOGĦOL",
+      "weekdays": "IT-TNEJN–IL-ĦAMIS U L-ĦADD",
+      "hours1": "09:00 - 00:00h",
+      "weekend": "IL-ĠIMGĦA U S-SIBT",
+      "hours2": "09:00 - 02:00h"
+    },
+    "contactSection": {
+      "title": "KUNTATT",
+      "phoneCopied": "Numru Kopjat!",
+      "emailCopied": "Email Kopjat!"
+    },
+    "where": {
+      "title": "FEJN INSIBUKOM",
+      "address1": "Triq Dun Frangisk Scibberas 80",
+      "address2": "4023 Mellieha, Malta",
+      "location": "Post"
+    },
+    "footer": "© 2025 Aurum. Id-drittijiet kollha riżervati."
+  },
+
+  "home": {
+    "bookNow": "Ibbukkja Issa"
+  },
+
+  "menu": {
+    "title": "Menu",
+    "desc": "F’Aurum, kull platt huwa maħdum b’passjoni u arti. L-isbaħ ingredjenti ta’ staġun jitħalltu ma’ tekniki innovattivi biex jinħoloq simfonija ta’ togħmiet li jdelgħuk fis-sensi.",
+    "download": "NIŻŻEL IL-MENU TAL-IKEL",
+    "bookNow": "Ibbukkja Issa"
+  },
+
+  "bar": {
+    "title": "Bar",
+    "desc": "Il-Bar ta’ Aurum huwa fejn it-togħma ssir arti f’forma likwida. Kull tazza tirrakkonta storja — minn spirti antiki għal cocktails moderni. Mixologists tagħna joħolqu esperjenzi li jqajmu s-sensi u jtellgħu l-mument.",
+    "download": "NIŻŻEL IL-MENU TAX-XARBA",
+    "bookNow": "Ibbukkja Issa"
+  },
+
+  "galleryPage": {
+    "title": "Galeriija",
+    "desc": "Vjaġġ viżiv ta’ eleganza u togħma. Skopri mumenti ta’ arti kulinari u atmosfera maqbuda f’Aurum.",
+    "bookNow": "Ibbukkja Issa"
+  },
+
+  "reservations": {
+    "title": "Riservazzjonijiet",
+    "desc": "Agħmel ir-riservazzjoni tiegħek faċilment billi timla l-formola fuq il-lemin. Aħna nikkonfermaw malajr kemm jista’ jkun.",
+    "form": {
+      "name": "Isem",
+      "email": "Email",
+      "people": "Numru ta’ persuni",
+      "date": "Data",
+      "time": "Ħin",
+      "notes": "Ħalli nota (mhux obbligatorja)",
+      "reserve": "RISERVA",
+      "alertClosed": "Aħna magħluqin f’dak il-ħin.",
+      "alertFull": "Dan il-ħin huwa diġà riservat!"
+    },
+    "bookNow": "Ibbukkja Issa"
+  },
+
+  "thankyou": {
+    "title": "Grazzi!",
+    "desc1": "It-talba tiegħek għal riservazzjoni ntbagħtet b’suċċess.",
+    "desc2": "Qed nistennew bil-ħerqa nilqgħuk f’Aurum.",
+    "bookNow": "Ibbukkja Issa"
+  }
+}

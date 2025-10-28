@@ -1,25 +1,23 @@
 import Navigation from "../Navigation";
 import Contact from "../Contact";
-import "../.././App.css";
+import "../../App.css";
 import drinksMenuImage from "../../assets/images/menu-drinks.png";
+import { useContext } from "react";
+import { LanguageContext } from "../../context/LanguageContext";
 
-export default function Menu() {
+export default function Bar() {
+  const { t } = useContext(LanguageContext);
+
   return (
     <>
       <div className="main-container">
         <Navigation />
         <div className="grid-container">
           <div className="div-one">
-            <h1 className="pages-header">Bar</h1>
-            <p className="pages-desc">
-              The Aurum Bar is where flavor meets artistry in liquid form. Here,
-              every glass tells a story — from smooth, aged spirits to vibrant,
-              modern cocktails. Our mixologists blend precision with creativity,
-              turning each drink into an experience that awakens the senses and
-              elevates the moment.
-            </p>
+            <h1 className="pages-header">{t("bar.title")}</h1>
+            <p className="pages-desc">{t("bar.desc")}</p>
             <a href="/drinks-menu.pdf" download className="pages-btn">
-              <span>DOWNLOAD DRINKS MENU</span>
+              <span>{t("bar.download")}</span>
             </a>
           </div>
           <div className="div-two">
@@ -31,11 +29,13 @@ export default function Menu() {
           </div>
         </div>
       </div>
+
       <div className="parallax">
         <a href="/reservations" className="parallax-btn">
-          <span>Book Now</span>
+          <span>{t("bar.bookNow")}</span>
         </a>
       </div>
+
       <Contact />
     </>
   );

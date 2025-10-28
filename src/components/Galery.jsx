@@ -1,14 +1,17 @@
-import { useEffect } from "react";
+import "./Galery.css";
+import { useContext, useEffect } from "react";
+import { LanguageContext } from "../context/LanguageContext";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./Galery.css";
 import img1 from "../assets/images/food5.jpg";
 import img2 from "../assets/images/drinks4.jpg";
 import img3 from "../assets/images/restourant7.jpg";
 
 export default function Galery() {
+  const { t } = useContext(LanguageContext);
+
   useEffect(() => {
-    AOS.init({ duration: 500, once: true }); // animacije traju 1s i pokreću se samo jednom
+    AOS.init({ duration: 500, once: true });
     AOS.refresh();
   }, []);
 
@@ -19,29 +22,21 @@ export default function Galery() {
         <img src={img1} alt="food" />
       </div>
       <div className="galery-description" data-aos="fade-left">
-        <h3 className="galery-heading">FOOD</h3>
-        <p className="galery-text">
-          At Aurum, every dish is a masterpiece. Our chefs combine seasonal
-          ingredients with refined techniques to create a menu that celebrates
-          Mediterranean heritage with a contemporary twist. Each plate is
-          designed not only to satisfy, but to surprise and delight.
-        </p>
+        <h3 className="galery-heading">{t("gallery.food.title")}</h3>
+        <p className="galery-text">{t("gallery.food.desc")}</p>
         <a href="/menu" className="galery-btn">
-          <span>MENU</span>
+          <span>{t("gallery.food.btn")}</span>
         </a>
       </div>
 
       {/* DRINKS */}
       <div className="galery-description" data-aos="fade-right">
-        <h3 className="galery-heading heading-drinks">BAR</h3>
-        <p className="galery-text text-drinks">
-          Our curated wine list and crafted cocktails perfectly complement the
-          dining experience. From rare vintages to signature mixes, every sip is
-          chosen to elevate the flavors of your meal and indulge your senses in
-          elegance.
-        </p>
+        <h3 className="galery-heading heading-drinks">
+          {t("gallery.drinks.title")}
+        </h3>
+        <p className="galery-text text-drinks">{t("gallery.drinks.desc")}</p>
         <a href="/drinks" className="galery-btn btn-drinks">
-          <span>MENU</span>
+          <span>{t("gallery.drinks.btn")}</span>
         </a>
       </div>
       <div className="galery-picture" data-aos="fade-left">
@@ -50,17 +45,13 @@ export default function Galery() {
 
       {/* AMBIENCE */}
       <div className="galery-picture" data-aos="fade-right">
-        <img src={img3} alt="food" />
+        <img src={img3} alt="ambience" />
       </div>
       <div className="galery-description" data-aos="fade-left">
-        <h3 className="galery-heading">AMBIENCE</h3>
-        <p className="galery-text">
-          Step into an atmosphere of timeless luxury. With sophisticated design,
-          warm lighting, and a view that captures the spirit of Malta, Aurum is
-          more than a restaurant — it’s an escape into refinement and comfort.
-        </p>
+        <h3 className="galery-heading">{t("gallery.ambience.title")}</h3>
+        <p className="galery-text">{t("gallery.ambience.desc")}</p>
         <a href="/gallery" className="galery-btn">
-          <span>GALLERY</span>
+          <span>{t("gallery.ambience.btn")}</span>
         </a>
       </div>
     </div>

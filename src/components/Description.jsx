@@ -1,9 +1,8 @@
 import "./Description.css";
+import { useContext } from "react";
+import { LanguageContext } from "../context/LanguageContext";
 
 export default function Description() {
-  return (
-    <div className="description">
-      Welcome to AURUM — where tradition meets elegance in the heart of Malta!
-    </div>
-  );
+  const { t } = useContext(LanguageContext);
+  return <div className="description">{t("description.text")}</div>;
 }

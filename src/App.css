@@ -56,17 +56,14 @@ html {
   transition: left 0.3s ease;
   z-index: 0;
 }
-
 .parallax-btn:hover::before {
   left: 0;
 }
-
 .parallax-btn span {
   position: relative;
   z-index: 1;
   transition: color 0.3s ease;
 }
-
 .parallax-btn:hover span {
   color: #000000;
 }

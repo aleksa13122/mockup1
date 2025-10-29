@@ -33,17 +33,12 @@
   height: 350px;
   width: 300px;
   border-radius: 10px;
-  align-self: center;
-  justify-self: center;
-  align-items: center;
-  background-color: aqua;
 }
 .card-title {
   color: white;
   font-size: 20px;
   font-family: "Baskervville SC", serif;
   font-optical-sizing: auto;
-  /* font-size: 50px; */
   font-weight: normal;
   font-style: normal;
 }

@@ -18,7 +18,6 @@
 .nav-link {
   position: relative; /* ključno za ::after */
   text-decoration: none;
-  /* gap: 20px; */
   color: rgb(228, 225, 225);
   font-family: "Faustina", serif;
   font-weight: bold;
@@ -64,7 +63,6 @@
   flex-direction: row;
   gap: 20px;
   color: whitesmoke;
-  /* animacija */
   opacity: 0;
   transform: translateY(-20px); /* krene malo iznad */
   animation: fadeInDown 0.8s ease forwards;
@@ -76,13 +74,11 @@
     transform: translateY(0);
   }
 }
-/* Language opcije */
+/* JEZICI */
 .language-btns {
   display: flex;
   gap: 8px;
 }
-
-/* Animacija donje linije */
 
 .flag-btn:hover,
 .flag-btn:focus {

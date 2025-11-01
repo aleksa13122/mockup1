@@ -120,7 +120,12 @@
   width: auto;
   object-fit: contain; /* sprečava deformaciju slike */
 }
-
+.highlight {
+  color: #efb237; /* sofisticirani champagne gold */
+  font-weight: 800;
+  font-size: 50px;
+  text-shadow: 0 0 8px rgba(224, 196, 140, 0.2);
+}
 /* === RESERVATIONS === */
 form {
   display: flex;
@@ -229,6 +234,9 @@ input[type="date"]:valid + .fake-placeholder {
     height: 60vh;
     background-position: center top;
   }
+  .highlight {
+    font-size: 30px;
+  }
 }
 
 /* PHONE HERO */
@@ -236,5 +244,128 @@ input[type="date"]:valid + .fake-placeholder {
   .bg {
     height: 50vh;
     background-position: center;
+  }
+}
+/* 950px — prelom layouta na jednu kolonu */
+@media (max-width: 950px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 30px;
+    min-height: auto;
+  }
+  .main-container {
+    padding-top: 120px; /* gura sadržaj ispod navigacije */
+  }
+  .div-one,
+  .div-two {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .pages-header {
+    font-size: 38px;
+  }
+
+  .pages-desc {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .pages-image,
+  .gallery-grid {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 650px) {
+  .main-container {
+    padding-bottom: 50px;
+    padding-top: 100px; /* navigacija izgleda veća vizuelno na manjim ekranima */
+  }
+}
+/* ==== MOBILNI < 440px ==== */
+@media (max-width: 440px) {
+  /* Gallery images */
+  .gallery-grid img {
+    height: 140px; /* bilo je 200px — smanjujemo */
+    border-radius: 6px;
+  }
+
+  .gallery-grid {
+    gap: 10px; /* manji razmak */
+  }
+
+  /* Reservation form */
+  .grid-container form {
+    width: 95%;
+    max-width: 300px; /* sprečava preširoko */
+    gap: 10px;
+  }
+
+  .grid-container input,
+  .grid-container select,
+  .grid-container textarea,
+  .grid-container button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .grid-container button {
+    padding: 10px;
+  }
+
+  /* Header spacing fix*/
+  .pages-header {
+    font-size: 34px;
+  }
+
+  .pages-desc {
+    font-size: 16px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-container {
+    padding-top: 100px;
+  }
+}
+/* ==== THANK YOU PAGE — ≤ 800px ==== */
+@media (max-width: 800px) {
+  .thanku-div {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .highlight {
+    font-size: 30px;
+  }
+  .thanku-header {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .thanku-desc {
+    font-size: 18px;
+    line-height: 1.6;
+    width: 90%;
+    margin: 8px auto;
+  }
+}
+
+/* ==== Super small phones — ≤ 480px ==== */
+@media (max-width: 480px) {
+  .thanku-header {
+    font-size: 30px;
+  }
+  .highlight {
+    font-size: 25px;
+  }
+  .thanku-desc {
+    font-size: 16px;
+    width: 95%;
   }
 }

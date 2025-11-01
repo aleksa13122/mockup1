@@ -118,7 +118,7 @@
   "thankyou": {
     "title": "Grazzi!",
     "desc1": "It-talba tiegħek għal riservazzjoni ntbagħtet b’suċċess.",
-    "desc2": "Qed nistennew bil-ħerqa nilqgħuk f’Aurum.",
+    "desc2": "Qed nistennew bil-ħerqa nilqgħuk f’<span class='highlight'>Aurum</span>.",
     "bookNow": "Ibbukkja Issa"
   }
 }

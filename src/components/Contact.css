@@ -131,6 +131,13 @@
 
 /* ✅ 650px — sve 1 kolona */
 @media (max-width: 650px) {
+  .contact-header {
+    align-self: center;
+    text-align: center;
+    margin-left: 0; /* skida pomeraj ka levoj strani */
+    width: 100%; /* da može centrirati lepo */
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
     text-align: center;

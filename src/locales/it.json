@@ -104,7 +104,7 @@
   "thankyou": {
     "title": "Grazie!",
     "desc1": "La tua richiesta di prenotazione è stata inviata con successo.",
-    "desc2": "Non vediamo l’ora di darti il benvenuto da Aurum.",
+    "desc2": "Non vediamo l’ora di darti il benvenuto da <span class='highlight'>Aurum</span>.",
     "bookNow": "Prenota Ora"
   }
 }

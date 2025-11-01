@@ -21,10 +21,14 @@ export default function ThankYou() {
         <div className="main-container">
           <div className="thanku-div">
             <h1 className="thanku-header">{t("thankyou.title")}</h1>
-            <p className="thanku-desc">{t("thankyou.desc1")}</p>
-            <p className="thanku-desc">
-              {t("thankyou.desc2")} <strong>Aurum</strong>.
-            </p>
+            <p
+              className="thanku-desc"
+              dangerouslySetInnerHTML={{ __html: t("thankyou.desc1") }}
+            ></p>
+            <p
+              className="thanku-desc"
+              dangerouslySetInnerHTML={{ __html: t("thankyou.desc2") }}
+            ></p>
           </div>
         </div>
 

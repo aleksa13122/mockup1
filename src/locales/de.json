@@ -104,7 +104,7 @@
   "thankyou": {
     "title": "Vielen Dank!",
     "desc1": "Ihre Reservierungsanfrage wurde erfolgreich übermittelt.",
-    "desc2": "Wir freuen uns darauf, Sie bei Aurum begrüßen zu dürfen.",
+    "desc2": "Wir freuen uns darauf, Sie bei <span class='highlight'>Aurum</span> begrüßen zu dürfen.",
     "bookNow": "Jetzt Buchen"
   }
 }

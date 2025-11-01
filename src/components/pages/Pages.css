@@ -223,3 +223,18 @@ input[type="date"]:valid + .fake-placeholder {
     height: 70vh; /* smanjuje crop */
   }
 }
+/* TABLET HERO */
+@media (max-width: 768px) {
+  .bg {
+    height: 60vh;
+    background-position: center top;
+  }
+}
+
+/* PHONE HERO */
+@media (max-width: 480px) {
+  .bg {
+    height: 50vh;
+    background-position: center;
+  }
+}

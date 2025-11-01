@@ -57,7 +57,7 @@ export default function Events() {
               className="close-btn"
               onClick={() => setSelectedEvent(null)}
             >
-              {t("events.modal.close")}
+              ×
             </button>
           </div>
         </div>

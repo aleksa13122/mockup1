@@ -105,3 +105,69 @@
   position: relative; /* ovo je ključno */
   cursor: pointer;
 }
+.desktop-only {
+  display: flex;
+}
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 1020px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* Overlay menu za manje displeje */
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.588);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  font-family: "Faustina", serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-menu {
+  text-align: center;
+}
+
+.mobile-nav-links a {
+  display: block;
+  font-size: 28px;
+  color: white;
+  margin: 18px 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 32px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-lang button {
+  margin: 10px;
+  font-size: 18px;
+  background: none;
+  border: 1px solid white;
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+}

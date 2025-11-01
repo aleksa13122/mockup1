@@ -5,10 +5,15 @@
 }
 * {
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 html {
   scroll-behavior: smooth;
   /* font-size: 62.5%; 1rem = 10px */
+}
+html,
+body {
+  overflow-x: hidden;
 }
 .bg {
   height: 100vh;

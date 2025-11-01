@@ -127,3 +127,65 @@
   align-self: flex-end;
   margin-right: 30px;
 }
+@media (max-width: 950px) {
+  .galery {
+    grid-template-columns: 1fr;
+  }
+  .galery-description {
+    padding: 40px 30px 50px 30px; /* top right bottom left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .galery-description,
+  .galery-picture {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .galery-picture img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  /* Align headings + buttons like desktop */
+  .galery-heading,
+  .galery-btn {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 25px;
+  }
+
+  /* Food text & btn left */
+  .galery > div:nth-child(1) {
+    order: 1;
+  } /* food image */
+  .galery > div:nth-child(2) {
+    order: 2;
+  } /* food text */
+  .galery > div:nth-child(2) .galery-btn {
+    align-self: flex-start;
+  }
+
+  /* Drinks text & btn right */
+  .galery > div:nth-child(3) {
+    order: 4;
+  } /* drinks text */
+  .galery > div:nth-child(4) {
+    order: 3;
+  } /* drinks image */
+  .galery > div:nth-child(3) .galery-btn {
+    align-self: flex-end;
+  }
+
+  /* Ambience left */
+  .galery > div:nth-child(5) {
+    order: 5;
+  } /* ambience image */
+  .galery > div:nth-child(6) {
+    order: 6;
+  } /* ambience text */
+  .galery > div:nth-child(6) .galery-btn {
+    align-self: flex-start;
+  }
+}

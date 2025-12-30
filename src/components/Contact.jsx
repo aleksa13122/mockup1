@@ -1,3 +1,4 @@
+import React from "react";
 import "./Contact.css";
 import { useContext, useState } from "react";
 import { LanguageContext } from "../context/LanguageContext";

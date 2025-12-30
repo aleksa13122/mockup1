@@ -1,3 +1,4 @@
+import React from "react";
 import Navigation from "../Navigation";
 import Contact from "../Contact";
 import "../pages/Pages.css";

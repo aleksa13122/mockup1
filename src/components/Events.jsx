@@ -1,3 +1,4 @@
+import React from "react";
 import "./Events.css";
 import { useState, useEffect, useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";

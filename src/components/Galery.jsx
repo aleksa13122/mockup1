@@ -1,3 +1,4 @@
+import React from "react";
 import "./Galery.css";
 import { useContext, useEffect } from "react";
 import { LanguageContext } from "../context/LanguageContext";

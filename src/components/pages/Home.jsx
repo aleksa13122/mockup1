@@ -1,3 +1,5 @@
+import React from "react";
+
 import "../../App.css";
 import rest1 from "../../assets/images/restourant1.jpg";
 import Navigation from "../Navigation.jsx";

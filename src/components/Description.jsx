@@ -1,3 +1,4 @@
+import React from "react";
 import "./Description.css";
 import { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";
